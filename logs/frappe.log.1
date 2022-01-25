@@ -1,0 +1,741 @@
+2022-01-15 04:42:12,106 ERROR frappe New Exception collected with id: 2022-01-15 04:42:11.920553-61.3.119.164-ada
+Site: erpeaz
+Form Dict: {'doctype': 'Employee', 'filters': '{"applicant":"Athulya - athulya.athu@gmail.com - bde-vaccancy"}', 'cmd': 'frappe.client.get'}
+2022-01-15 06:01:34,585 ERROR frappe Could not take error snapshot: characters_written
+Site: sanctity.erpeaz.com
+Form Dict: {'args': '{"language":"English","country":"India","timezone":"Asia/Kolkata","currency":"INR","full_name":"Jinsy","email":"jinsydasp@gmail.com","password":"Jinsy1997","domains":["Distribution","Education","Manufacturing","Retail","Services","Agriculture","Healthcare","Non Profit"],"attach_logo":"/files/letter head.png","company_name":"Sanctity Ferme","company_abbr":"SF","company_tagline":"You Choose The trees and we grow them for You","bank_account":"SBI","chart_of_accounts":"India - Chart of Accounts","fy_start_date":"2021-04-01","fy_end_date":"2022-03-31"}', 'cmd': 'frappe.desk.page.setup_wizard.setup_wizard.setup_complete'}
+Traceback (most recent call last):
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/app.py", line 68, in application
+    response = frappe.api.handle()
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/api.py", line 55, in handle
+    return frappe.handler.handle()
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/handler.py", line 31, in handle
+    data = execute_cmd(cmd)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/handler.py", line 67, in execute_cmd
+    return frappe.call(method, **frappe.form_dict)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/__init__.py", line 1208, in call
+    return fn(*args, **newargs)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/desk/page/setup_wizard/setup_wizard.py", line 77, in setup_complete
+    run_setup_success(args)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/desk/page/setup_wizard/setup_wizard.py", line 99, in run_setup_success
+    install_fixtures.install()
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/desk/page/setup_wizard/install_fixtures.py", line 16, in install
+    sync_dashboards()
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/utils/dashboard.py", line 94, in sync_dashboards
+    print("Updating Dashboard for {app}".format(app=app_name))
+BrokenPipeError: [Errno 32] Broken pipe
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/utils/error.py", line 36, in make_error_snapshot
+    snapshot = get_snapshot(exception)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/utils/error.py", line 127, in get_snapshot
+    value = pydoc.text.repr(getattr(evalue, name))
+AttributeError: characters_written
+2022-01-15 07:37:34,918 ERROR frappe New Exception collected with id: 2022-01-15 07:37:34.904476-117.208.17.215-8f3
+Site: sanctity.erpeaz.com
+Form Dict: {'docs': '{"name":"Customize Form","max_attachments":0,"allow_copy":0,"istable":0,"editable_grid":0,"quick_entry":0,"track_changes":0,"track_views":0,"allow_auto_repeat":0,"allow_import":1,"show_preview_popup":0,"email_append_to":0,"sort_order":"DESC","doctype":"Customize Form","fields":[{"name":"231200bff8","parent":"Customize Form","parentfield":"fields","parenttype":"Customize Form","idx":1,"docstatus":0,"fieldtype":"Select","fieldname":"naming_series","non_negative":0,"reqd":1,"unique":0,"in_list_view":1,"in_standard_filter":0,"in_global_search":0,"in_preview":0,"bold":0,"allow_in_quick_entry":0,"translatable":0,"length":0,"options":"PUR-RFQ-.YYYY.-","fetch_if_empty":0,"permlevel":0,"hidden":0,"read_only":0,"collapsible":0,"allow_bulk_edit":0,"ignore_user_permissions":0,"allow_on_submit":0,"report_hide":0,"remember_last_selected_value":0,"hide_border":0,"in_filter":0,"hide_seconds":0,"hide_days":0,"print_hide":1,"print_hide_if_no_value":0,"columns":0,"is_custom_field":0,"doctype":"Customize Form Field","label":"Series","_sortable":false},{"name":"f87ed65b8a","parent":"Customize Form","parentfield":"fields","parenttype":"Customize Form","idx":2,"docstatus":0,"label":"Company","fieldtype":"Link","fieldname":"company","non_negative":0,"reqd":1,"unique":0,"in_list_view":1,"in_standard_filter":0,"in_global_search":0,"in_preview":0,"bold":0,"allow_in_quick_entry":0,"translatable":0,"length":0,"fetch_if_empty":0,"permlevel":0,"hidden":0,"read_only":0,"collapsible":0,"allow_bulk_edit":0,"ignore_user_permissions":0,"allow_on_submit":0,"report_hide":0,"remember_last_selected_value":1,"hide_border":0,"in_filter":0,"hide_seconds":0,"hide_days":0,"print_hide":1,"print_hide_if_no_value":0,"columns":0,"is_custom_field":0,"doctype":"Customize Form Field","options":"Company","_sortable":false},{"name":"b85666a26c","parent":"Customize Form","parentfield":"fields","parenttype":"Customize Form","idx":3,"docstatus":0,"fieldtype":"Link","fieldname":"vendor","non_negative":0,"reqd":0,"unique":0,"in_list_view":0,"in_standard_filter":1,"in_global_search":0,"in_preview":0,"bold":0,"allow_in_quick_entry":0,"translatable":0,"length":0,"fetch_if_empty":0,"permlevel":0,"hidden":1,"read_only":1,"collapsible":0,"allow_bulk_edit":0,"ignore_user_permissions":0,"allow_on_submit":0,"report_hide":0,"remember_last_selected_value":0,"hide_border":0,"in_filter":0,"hide_seconds":0,"hide_days":0,"print_hide":0,"print_hide_if_no_value":0,"columns":0,"is_custom_field":0,"doctype":"Customize Form Field","label":"Supplier","options":"Supplier","description":"For individual supplier","_sortable":false},{"name":"28127874a4","parent":"Customize Form","parentfield":"fields","parenttype":"Customize Form","idx":4,"docstatus":0,"fieldtype":"Column Break","fieldname":"column_break1","non_negative":0,"reqd":0,"unique":0,"in_list_view":0,"in_standard_filter":0,"in_global_search":0,"in_preview":0,"bold":0,"allow_in_quick_entry":0,"translatable":0,"length":0,"fetch_if_empty":0,"permlevel":0,"hidden":0,"read_only":0,"collapsible":0,"allow_bulk_edit":0,"ignore_user_permissions":0,"allow_on_submit":0,"report_hide":0,"remember_last_selected_value":0,"hide_border":0,"in_filter":0,"hide_seconds":0,"hide_days":0,"print_hide":0,"print_hide_if_no_value":0,"columns":0,"is_custom_field":0,"doctype":"Customize Form Field","print_width":"50%","width":"50%","_sortable":false},{"name":"5ec0c1b706","parent":"Customize Form","parentfield":"fields","parenttype":"Customize Form","idx":5,"docstatus":0,"label":"Date","fieldtype":"Date","fieldname":"transaction_date","non_negative":0,"reqd":1,"unique":0,"in_list_view":1,"in_standard_filter":0,"in_global_search":0,"in_preview":0,"bold":0,"allow_in_quick_entry":0,"translatable":0,"length":0,"fetch_if_empty":0,"permlevel":0,"hidden":0,"read_only":0,"collapsible":0,"allow_bulk_edit":0,"ignore_user_permissions":0,"allow_on_submit":0,"report_hide":0,"remember_last_selected_value":0,"hide_border":0,"in_filter":0,"hide_seconds":0,"hide_days":0,"print_hide":0,"print_hide_if_no_value":0,"columns":0,"is_custom_field":0,"doctype":"Customize Form Field","default":"Today","_sortable":false},{"name":"6d8ff111bd","parent":"Customize Form","parentfield":"fields","parenttype":"Customize Form","idx":6,"docstatus":0,"fieldtype":"Date","fieldname":"schedule_date","non_negative":0,"reqd":0,"unique":0,"in_list_view":0,"in_standard_filter":0,"in_global_search":0,"in_preview":0,"bold":0,"allow_in_quick_entry":0,"translatable":0,"length":0,"fetch_if_empty":0,"permlevel":0,"hidden":0,"read_only":0,"collapsible":0,"allow_bulk_edit":0,"ignore_user_permissions":0,"allow_on_submit":0,"report_hide":0,"remember_last_selected_value":0,"hide_border":0,"in_filter":0,"hide_seconds":0,"hide_days":0,"print_hide":0,"print_hide_if_no_value":0,"columns":0,"is_custom_field":0,"doctype":"Customize Form Field","label":"Required Date","_sortable":false},{"name":"3d7d3fe952","parent":"Customize Form","parentfield":"fields","parenttype":"Customize Form","idx":7,"docstatus":0,"label":"Status","fieldtype":"Select","fieldname":"status","non_negative":0,"reqd":1,"unique":0,"in_list_view":0,"in_standard_filter":0,"in_global_search":0,"in_preview":0,"bold":0,"allow_in_quick_entry":0,"translatable":0,"length":0,"fetch_if_empty":0,"permlevel":0,"hidden":0,"read_only":1,"collapsible":0,"allow_bulk_edit":0,"ignore_user_permissions":0,"allow_on_submit":0,"report_hide":0,"remember_last_selected_value":0,"hide_border":0,"in_filter":0,"hide_seconds":0,"hide_days":0,"print_hide":1,"print_hide_if_no_value":0,"columns":0,"is_custom_field":0,"doctype":"Customize Form Field","options":"\\nDraft\\nSubmitted\\nCancelled","_sortable":false},{"name":"f8892c4328","parent":"Customize Form","parentfield":"fields","parenttype":"Customize Form","idx":8,"docstatus":0,"fieldtype":"Link","fieldname":"amended_from","non_negative":0,"reqd":0,"unique":0,"in_list_view":0,"in_standard_filter":0,"in_global_search":0,"in_preview":0,"bold":0,"allow_in_quick_entry":0,"translatable":0,"length":0,"fetch_if_empty":0,"permlevel":0,"hidden":0,"read_only":1,"collapsible":0,"allow_bulk_edit":0,"ignore_user_permissions":0,"allow_on_submit":0,"report_hide":0,"remember_last_selected_value":0,"hide_border":0,"in_filter":0,"hide_seconds":0,"hide_days":0,"print_hide":1,"print_hide_if_no_value":0,"columns":0,"is_custom_field":0,"doctype":"Customize Form Field","label":"Amended From","options":"Request for Quotation","_sortable":false},{"name":"51651a0747","parent":"Customize Form","parentfield":"fields","parenttype":"Customize Form","idx":9,"docstatus":0,"fieldtype":"Section Break","fieldname":"suppliers_section","non_negative":0,"reqd":0,"unique":0,"in_list_view":0,"in_standard_filter":0,"in_global_search":0,"in_preview":0,"bold":0,"allow_in_quick_entry":0,"translatable":0,"length":0,"fetch_if_empty":0,"permlevel":0,"hidden":0,"read_only":0,"collapsible":0,"allow_bulk_edit":0,"ignore_user_permissions":0,"allow_on_submit":0,"report_hide":0,"remember_last_selected_value":0,"hide_border":0,"in_filter":0,"hide_seconds":0,"hide_days":0,"print_hide":0,"print_hide_if_no_value":0,"columns":0,"is_custom_field":0,"doctype":"Customize Form Field","_sortable":false},{"name":"dc628a42be","parent":"Customize Form","parentfield":"fields","parenttype":"Customize Form","idx":10,"docstatus":0,"fieldtype":"Table","fieldname":"suppliers","non_negative":0,"reqd":1,"unique":0,"in_list_view":0,"in_standard_filter":0,"in_global_search":0,"in_preview":0,"bold":0,"allow_in_quick_entry":0,"translatable":0,"length":0,"fetch_if_empty":0,"permlevel":0,"hidden":0,"read_only":0,"collapsible":0,"allow_bulk_edit":0,"ignore_user_permissions":0,"allow_on_submit":0,"report_hide":0,"remember_last_selected_value":0,"hide_border":0,"in_filter":0,"hide_seconds":0,"hide_days":0,"print_hide":1,"print_hide_if_no_value":0,"columns":0,"is_custom_field":0,"doctype":"Customize Form Field","label":"Suppliers","options":"Request for Quotation Supplier","_sortable":false},{"name":"8eeef2a88f","parent":"Customize Form","parentfield":"fields","parenttype":"Customize Form","idx":11,"docstatus":0,"fieldtype":"Section Break","fieldname":"items_section","non_negative":0,"reqd":0,"unique":0,"in_list_view":0,"in_standard_filter":0,"in_global_search":0,"in_preview":0,"bold":0,"allow_in_quick_entry":0,"translatable":0,"length":0,"options":"fa fa-shopping-cart","fetch_if_empty":0,"permlevel":0,"hidden":0,"read_only":0,"collapsible":0,"allow_bulk_edit":0,"ignore_user_permissions":0,"allow_on_submit":0,"report_hide":0,"remember_last_selected_value":0,"hide_border":0,"in_filter":0,"hide_seconds":0,"hide_days":0,"print_hide":0,"print_hide_if_no_value":0,"columns":0,"is_custom_field":0,"doctype":"Customize Form Field","_sortable":false},{"name":"b956c7b0df","parent":"Customize Form","parentfield":"fields","parenttype":"Customize Form","idx":12,"docstatus":0,"fieldtype":"Table","fieldname":"items","non_negative":0,"reqd":1,"unique":0,"in_list_view":0,"in_standard_filter":0,"in_global_search":0,"in_preview":0,"bold":0,"allow_in_quick_entry":0,"translatable":0,"length":0,"fetch_if_empty":0,"permlevel":0,"hidden":0,"read_only":0,"collapsible":0,"allow_bulk_edit":0,"ignore_user_permissions":0,"allow_on_submit":0,"report_hide":0,"remember_last_selected_value":0,"hide_border":0,"in_filter":0,"hide_seconds":0,"hide_days":0,"print_hide":0,"print_hide_if_no_value":0,"columns":0,"is_custom_field":0,"doctype":"Customize Form Field","label":"Items","options":"Request for Quotation Item","_sortable":false},{"name":"cbf72e9a7e","parent":"Customize Form","parentfield":"fields","parenttype":"Customize Form","idx":13,"docstatus":0,"label":"Email Details","fieldtype":"Section Break","fieldname":"supplier_response_section","non_negative":0,"reqd":0,"unique":0,"in_list_view":0,"in_standard_filter":0,"in_global_search":0,"in_preview":0,"bold":0,"allow_in_quick_entry":0,"translatable":0,"length":0,"fetch_if_empty":0,"permlevel":0,"hidden":1,"read_only":0,"collapsible":0,"allow_bulk_edit":0,"ignore_user_permissions":0,"allow_on_submit":0,"report_hide":0,"remember_last_selected_value":0,"hide_border":0,"in_filter":0,"hide_seconds":0,"hide_days":0,"print_hide":0,"print_hide_if_no_value":0,"columns":0,"is_custom_field":0,"doctype":"Customize Form Field","_sortable":false},{"name":"d555de8d78","parent":"Customize Form","parentfield":"fields","parenttype":"Customize Form","idx":14,"docstatus":0,"fieldtype":"Link","fieldname":"salutation","non_negative":0,"reqd":0,"unique":0,"in_list_view":0,"in_standard_filter":0,"in_global_search":0,"in_preview":0,"bold":0,"allow_in_quick_entry":0,"translatable":0,"length":0,"fetch_if_empty":0,"permlevel":0,"hidden":0,"read_only":0,"collapsible":0,"allow_bulk_edit":0,"ignore_user_permissions":0,"allow_on_submit":0,"report_hide":0,"remember_last_selected_value":0,"hide_border":0,"in_filter":0,"hide_seconds":0,"hide_days":0,"print_hide":1,"print_hide_if_no_value":0,"columns":0,"is_custom_field":0,"doctype":"Customize Form Field","label":"Salutation","options":"Salutation","description":"Select a greeting for the receiver. E.g. Mr., Ms., etc.","_sortable":false},{"name":"5011deb6a6","parent":"Customize Form","parentfield":"fields","parenttype":"Customize Form","idx":15,"docstatus":0,"fieldtype":"Data","fieldname":"subject","non_negative":0,"reqd":0,"unique":0,"in_list_view":0,"in_standard_filter":0,"in_global_search":0,"in_preview":0,"bold":0,"allow_in_quick_entry":0,"translatable":0,"length":0,"fetch_if_empty":1,"permlevel":0,"hidden":0,"read_only":0,"collapsible":0,"allow_bulk_edit":0,"ignore_user_permissions":0,"allow_on_submit":0,"report_hide":0,"remember_last_selected_value":0,"hide_border":0,"in_filter":0,"hide_seconds":0,"hide_days":0,"print_hide":1,"print_hide_if_no_value":0,"columns":0,"is_custom_field":0,"doctype":"Customize Form Field","label":"Subject","fetch_from":"email_template.subject","_sortable":false},{"name":"6718f1273e","parent":"Customize Form","parentfield":"fields","parenttype":"Customize Form","idx":16,"docstatus":0,"fieldtype":"Column Break","fieldname":"col_break_email_1","non_negative":0,"reqd":0,"unique":0,"in_list_view":0,"in_standard_filter":0,"in_global_search":0,"in_preview":0,"bold":0,"allow_in_quick_entry":0,"translatable":0,"length":0,"fetch_if_empty":0,"permlevel":0,"hidden":0,"read_only":0,"collapsible":0,"allow_bulk_edit":0,"ignore_user_permissions":0,"allow_on_submit":0,"report_hide":0,"remember_last_selected_value":0,"hide_border":0,"in_filter":0,"hide_seconds":0,"hide_days":0,"print_hide":0,"print_hide_if_no_value":0,"columns":0,"is_custom_field":0,"doctype":"Customize Form Field","_sortable":false},{"name":"f5ff361b05","parent":"Customize Form","parentfield":"fields","parenttype":"Customize Form","idx":17,"docstatus":0,"fieldtype":"Link","fieldname":"email_template","non_negative":0,"reqd":0,"unique":0,"in_list_view":0,"in_standard_filter":0,"in_global_search":0,"in_preview":0,"bold":0,"allow_in_quick_entry":0,"translatable":0,"length":0,"fetch_if_empty":0,"permlevel":0,"hidden":0,"read_only":0,"collapsible":0,"allow_bulk_edit":0,"ignore_user_permissions":0,"allow_on_submit":0,"report_hide":0,"remember_last_selected_value":0,"hide_border":0,"in_filter":0,"hide_seconds":0,"hide_days":0,"print_hide":1,"print_hide_if_no_value":0,"columns":0,"is_custom_field":0,"doctype":"Customize Form Field","options":"Email Template","label":"Email Template","_sortable":false},{"name":"8afa2ccfdb","parent":"Customize Form","parentfield":"fields","parenttype":"Customize Form","idx":18,"docstatus":0,"label":"Preview Email","fieldtype":"Button","fieldname":"preview","non_negative":0,"reqd":0,"unique":0,"in_list_view":0,"in_standard_filter":0,"in_global_search":0,"in_preview":0,"bold":0,"allow_in_quick_entry":0,"translatable":0,"length":0,"fetch_if_empty":0,"permlevel":0,"hidden":0,"read_only":0,"collapsible":0,"allow_bulk_edit":0,"ignore_user_permissions":0,"allow_on_submit":0,"report_hide":0,"remember_last_selected_value":0,"hide_border":0,"in_filter":0,"hide_seconds":0,"hide_days":0,"print_hide":0,"print_hide_if_no_value":0,"columns":0,"is_custom_field":0,"doctype":"Customize Form Field","depends_on":"eval:!doc.docstatus==1","_sortable":false},{"name":"9fb3b6cb41","parent":"Customize Form","parentfield":"fields","parenttype":"Customize Form","idx":19,"docstatus":0,"fieldtype":"Section Break","fieldname":"sec_break_email_2","non_negative":0,"reqd":0,"unique":0,"in_list_view":0,"in_standard_filter":0,"in_global_search":0,"in_preview":0,"bold":0,"allow_in_quick_entry":0,"translatable":0,"length":0,"fetch_if_empty":0,"permlevel":0,"hidden":0,"read_only":0,"collapsible":0,"allow_bulk_edit":0,"ignore_user_permissions":0,"allow_on_submit":0,"report_hide":0,"remember_last_selected_value":0,"hide_border":1,"in_filter":0,"hide_seconds":0,"hide_days":0,"print_hide":0,"print_hide_if_no_value":0,"columns":0,"is_custom_field":0,"doctype":"Customize Form Field","depends_on":"eval:!doc.__islocal","_sortable":false},{"name":"b4bf682e9e","parent":"Customize Form","parentfield":"fields","parenttype":"Customize Form","idx":20,"docstatus":0,"label":"Message for Supplier","fieldtype":"Text Editor","fieldname":"message_for_supplier","non_negative":0,"reqd":1,"unique":0,"in_list_view":1,"in_standard_filter":0,"in_global_search":0,"in_preview":0,"bold":0,"allow_in_quick_entry":0,"translatable":0,"length":0,"fetch_if_empty":1,"permlevel":0,"hidden":0,"read_only":0,"collapsible":0,"allow_bulk_edit":0,"ignore_user_permissions":0,"allow_on_submit":1,"report_hide":0,"remember_last_selected_value":0,"hide_border":0,"in_filter":0,"hide_seconds":0,"hide_days":0,"print_hide":1,"print_hide_if_no_value":0,"columns":0,"is_custom_field":0,"doctype":"Customize Form Field","fetch_from":"email_template.response","_sortable":false},{"name":"a7317f2984","parent":"Customize Form","parentfield":"fields","parenttype":"Customize Form","idx":21,"docstatus":0,"label":"Terms and Conditions","fieldtype":"Section Break","fieldname":"terms_section_break","non_negative":0,"reqd":0,"unique":0,"in_list_view":0,"in_standard_filter":0,"in_global_search":0,"in_preview":0,"bold":0,"allow_in_quick_entry":0,"translatable":0,"length":0,"fetch_if_empty":0,"permlevel":0,"hidden":1,"read_only":0,"collapsible":1,"allow_bulk_edit":0,"ignore_user_permissions":0,"allow_on_submit":0,"report_hide":0,"remember_last_selected_value":0,"hide_border":0,"in_filter":0,"hide_seconds":0,"hide_days":0,"print_hide":0,"print_hide_if_no_value":0,"columns":0,"is_custom_field":0,"doctype":"Customize Form Field","options":"fa fa-legal","collapsible_depends_on":"terms","_sortable":false},{"name":"4873f1e7c9","parent":"Customize Form","parentfield":"fields","parenttype":"Customize Form","idx":22,"docstatus":0,"fieldtype":"Link","fieldname":"tc_name","non_negative":0,"reqd":0,"unique":0,"in_list_view":0,"in_standard_filter":0,"in_global_search":0,"in_preview":0,"bold":0,"allow_in_quick_entry":0,"translatable":0,"length":0,"fetch_if_empty":0,"permlevel":0,"hidden":0,"read_only":0,"collapsible":0,"allow_bulk_edit":0,"ignore_user_permissions":0,"allow_on_submit":0,"report_hide":0,"remember_last_selected_value":0,"hide_border":0,"in_filter":0,"hide_seconds":0,"hide_days":0,"print_hide":1,"print_hide_if_no_value":0,"columns":0,"is_custom_field":0,"doctype":"Customize Form Field","label":"Terms","options":"Terms and Conditions","_sortable":false},{"name":"1ea356ef8b","parent":"Customize Form","parentfield":"fields","parenttype":"Customize Form","idx":23,"docstatus":0,"fieldtype":"Text Editor","fieldname":"terms","non_negative":0,"reqd":0,"unique":0,"in_list_view":0,"in_standard_filter":0,"in_global_search":0,"in_preview":0,"bold":0,"allow_in_quick_entry":0,"translatable":0,"length":0,"fetch_if_empty":0,"permlevel":0,"hidden":0,"read_only":0,"collapsible":0,"allow_bulk_edit":0,"ignore_user_permissions":0,"allow_on_submit":0,"report_hide":0,"remember_last_selected_value":0,"hide_border":0,"in_filter":0,"hide_seconds":0,"hide_days":0,"print_hide":0,"print_hide_if_no_value":0,"columns":0,"is_custom_field":0,"doctype":"Customize Form Field","label":"Terms and Conditions","_sortable":false},{"name":"a47c25988d","parent":"Customize Form","parentfield":"fields","parenttype":"Customize Form","idx":24,"docstatus":0,"label":"Printing Settings","fieldtype":"Section Break","fieldname":"printing_settings","non_negative":0,"reqd":0,"unique":0,"in_list_view":0,"in_standard_filter":0,"in_global_search":0,"in_preview":0,"bold":0,"allow_in_quick_entry":0,"translatable":0,"length":0,"fetch_if_empty":0,"permlevel":0,"hidden":1,"read_only":0,"collapsible":1,"allow_bulk_edit":0,"ignore_user_permissions":0,"allow_on_submit":0,"report_hide":0,"remember_last_selected_value":0,"hide_border":0,"in_filter":0,"hide_seconds":0,"hide_days":0,"print_hide":0,"print_hide_if_no_value":0,"columns":0,"is_custom_field":0,"doctype":"Customize Form Field","_sortable":false},{"name":"8b2002ceee","parent":"Customize Form","parentfield":"fields","parenttype":"Customize Form","idx":25,"docstatus":0,"label":"Print Heading","fieldtype":"Link","fieldname":"select_print_heading","non_negative":0,"reqd":0,"unique":0,"in_list_view":0,"in_standard_filter":0,"in_global_search":0,"in_preview":0,"bold":0,"allow_in_quick_entry":0,"translatable":0,"length":0,"fetch_if_empty":0,"permlevel":0,"hidden":0,"read_only":0,"collapsible":0,"allow_bulk_edit":0,"ignore_user_permissions":0,"allow_on_submit":1,"report_hide":1,"remember_last_selected_value":0,"hide_border":0,"in_filter":0,"hide_seconds":0,"hide_days":0,"print_hide":1,"print_hide_if_no_value":0,"columns":0,"is_custom_field":0,"doctype":"Customize Form Field","options":"Print Heading","_sortable":false},{"name":"6785dc13e9","parent":"Customize Form","parentfield":"fields","parenttype":"Customize Form","idx":26,"docstatus":0,"fieldtype":"Link","fieldname":"letter_head","non_negative":0,"reqd":0,"unique":0,"in_list_view":0,"in_standard_filter":0,"in_global_search":0,"in_preview":0,"bold":0,"allow_in_quick_entry":0,"translatable":0,"length":0,"fetch_if_empty":0,"permlevel":0,"hidden":0,"read_only":0,"collapsible":0,"allow_bulk_edit":0,"ignore_user_permissions":0,"allow_on_submit":1,"report_hide":0,"remember_last_selected_value":0,"hide_border":0,"in_filter":0,"hide_seconds":0,"hide_days":0,"print_hide":1,"print_hide_if_no_value":0,"columns":0,"is_custom_field":0,"doctype":"Customize Form Field","label":"Letter Head","options":"Letter Head","_sortable":false}],"actions":[],"links":[],"doc_type":"Request for Quotation","__unsaved":1,"label":"","autoname":"naming_series:","sort_field":"modified","search_fields":"status, transaction_date"}', 'method': 'save_customization', 'cmd': 'run_doc_method'}
+2022-01-15 07:37:34,923 ERROR frappe New Exception collected with id: 2022-01-15 07:37:34.910109-117.208.17.215-ef8
+Site: sanctity.erpeaz.com
+Form Dict: {'docs': '{"name":"Customize Form","max_attachments":0,"allow_copy":0,"istable":0,"editable_grid":0,"quick_entry":0,"track_changes":0,"track_views":0,"allow_auto_repeat":0,"allow_import":1,"show_preview_popup":0,"email_append_to":0,"sort_order":"DESC","doctype":"Customize Form","fields":[{"name":"231200bff8","parent":"Customize Form","parentfield":"fields","parenttype":"Customize Form","idx":1,"docstatus":0,"fieldtype":"Select","fieldname":"naming_series","non_negative":0,"reqd":1,"unique":0,"in_list_view":1,"in_standard_filter":0,"in_global_search":0,"in_preview":0,"bold":0,"allow_in_quick_entry":0,"translatable":0,"length":0,"options":"PUR-RFQ-.YYYY.-","fetch_if_empty":0,"permlevel":0,"hidden":0,"read_only":0,"collapsible":0,"allow_bulk_edit":0,"ignore_user_permissions":0,"allow_on_submit":0,"report_hide":0,"remember_last_selected_value":0,"hide_border":0,"in_filter":0,"hide_seconds":0,"hide_days":0,"print_hide":1,"print_hide_if_no_value":0,"columns":0,"is_custom_field":0,"doctype":"Customize Form Field","label":"Series","_sortable":false},{"name":"f87ed65b8a","parent":"Customize Form","parentfield":"fields","parenttype":"Customize Form","idx":2,"docstatus":0,"label":"Company","fieldtype":"Link","fieldname":"company","non_negative":0,"reqd":1,"unique":0,"in_list_view":1,"in_standard_filter":0,"in_global_search":0,"in_preview":0,"bold":0,"allow_in_quick_entry":0,"translatable":0,"length":0,"fetch_if_empty":0,"permlevel":0,"hidden":0,"read_only":0,"collapsible":0,"allow_bulk_edit":0,"ignore_user_permissions":0,"allow_on_submit":0,"report_hide":0,"remember_last_selected_value":1,"hide_border":0,"in_filter":0,"hide_seconds":0,"hide_days":0,"print_hide":1,"print_hide_if_no_value":0,"columns":0,"is_custom_field":0,"doctype":"Customize Form Field","options":"Company","_sortable":false},{"name":"b85666a26c","parent":"Customize Form","parentfield":"fields","parenttype":"Customize Form","idx":3,"docstatus":0,"fieldtype":"Link","fieldname":"vendor","non_negative":0,"reqd":0,"unique":0,"in_list_view":0,"in_standard_filter":1,"in_global_search":0,"in_preview":0,"bold":0,"allow_in_quick_entry":0,"translatable":0,"length":0,"fetch_if_empty":0,"permlevel":0,"hidden":1,"read_only":1,"collapsible":0,"allow_bulk_edit":0,"ignore_user_permissions":0,"allow_on_submit":0,"report_hide":0,"remember_last_selected_value":0,"hide_border":0,"in_filter":0,"hide_seconds":0,"hide_days":0,"print_hide":0,"print_hide_if_no_value":0,"columns":0,"is_custom_field":0,"doctype":"Customize Form Field","label":"Supplier","options":"Supplier","description":"For individual supplier","_sortable":false},{"name":"28127874a4","parent":"Customize Form","parentfield":"fields","parenttype":"Customize Form","idx":4,"docstatus":0,"fieldtype":"Column Break","fieldname":"column_break1","non_negative":0,"reqd":0,"unique":0,"in_list_view":0,"in_standard_filter":0,"in_global_search":0,"in_preview":0,"bold":0,"allow_in_quick_entry":0,"translatable":0,"length":0,"fetch_if_empty":0,"permlevel":0,"hidden":0,"read_only":0,"collapsible":0,"allow_bulk_edit":0,"ignore_user_permissions":0,"allow_on_submit":0,"report_hide":0,"remember_last_selected_value":0,"hide_border":0,"in_filter":0,"hide_seconds":0,"hide_days":0,"print_hide":0,"print_hide_if_no_value":0,"columns":0,"is_custom_field":0,"doctype":"Customize Form Field","print_width":"50%","width":"50%","_sortable":false},{"name":"5ec0c1b706","parent":"Customize Form","parentfield":"fields","parenttype":"Customize Form","idx":5,"docstatus":0,"label":"Date","fieldtype":"Date","fieldname":"transaction_date","non_negative":0,"reqd":1,"unique":0,"in_list_view":1,"in_standard_filter":0,"in_global_search":0,"in_preview":0,"bold":0,"allow_in_quick_entry":0,"translatable":0,"length":0,"fetch_if_empty":0,"permlevel":0,"hidden":0,"read_only":0,"collapsible":0,"allow_bulk_edit":0,"ignore_user_permissions":0,"allow_on_submit":0,"report_hide":0,"remember_last_selected_value":0,"hide_border":0,"in_filter":0,"hide_seconds":0,"hide_days":0,"print_hide":0,"print_hide_if_no_value":0,"columns":0,"is_custom_field":0,"doctype":"Customize Form Field","default":"Today","_sortable":false},{"name":"6d8ff111bd","parent":"Customize Form","parentfield":"fields","parenttype":"Customize Form","idx":6,"docstatus":0,"fieldtype":"Date","fieldname":"schedule_date","non_negative":0,"reqd":0,"unique":0,"in_list_view":0,"in_standard_filter":0,"in_global_search":0,"in_preview":0,"bold":0,"allow_in_quick_entry":0,"translatable":0,"length":0,"fetch_if_empty":0,"permlevel":0,"hidden":0,"read_only":0,"collapsible":0,"allow_bulk_edit":0,"ignore_user_permissions":0,"allow_on_submit":0,"report_hide":0,"remember_last_selected_value":0,"hide_border":0,"in_filter":0,"hide_seconds":0,"hide_days":0,"print_hide":0,"print_hide_if_no_value":0,"columns":0,"is_custom_field":0,"doctype":"Customize Form Field","label":"Required Date","_sortable":false},{"name":"3d7d3fe952","parent":"Customize Form","parentfield":"fields","parenttype":"Customize Form","idx":7,"docstatus":0,"label":"Status","fieldtype":"Select","fieldname":"status","non_negative":0,"reqd":1,"unique":0,"in_list_view":0,"in_standard_filter":0,"in_global_search":0,"in_preview":0,"bold":0,"allow_in_quick_entry":0,"translatable":0,"length":0,"fetch_if_empty":0,"permlevel":0,"hidden":0,"read_only":1,"collapsible":0,"allow_bulk_edit":0,"ignore_user_permissions":0,"allow_on_submit":0,"report_hide":0,"remember_last_selected_value":0,"hide_border":0,"in_filter":0,"hide_seconds":0,"hide_days":0,"print_hide":1,"print_hide_if_no_value":0,"columns":0,"is_custom_field":0,"doctype":"Customize Form Field","options":"\\nDraft\\nSubmitted\\nCancelled","_sortable":false},{"name":"f8892c4328","parent":"Customize Form","parentfield":"fields","parenttype":"Customize Form","idx":8,"docstatus":0,"fieldtype":"Link","fieldname":"amended_from","non_negative":0,"reqd":0,"unique":0,"in_list_view":0,"in_standard_filter":0,"in_global_search":0,"in_preview":0,"bold":0,"allow_in_quick_entry":0,"translatable":0,"length":0,"fetch_if_empty":0,"permlevel":0,"hidden":0,"read_only":1,"collapsible":0,"allow_bulk_edit":0,"ignore_user_permissions":0,"allow_on_submit":0,"report_hide":0,"remember_last_selected_value":0,"hide_border":0,"in_filter":0,"hide_seconds":0,"hide_days":0,"print_hide":1,"print_hide_if_no_value":0,"columns":0,"is_custom_field":0,"doctype":"Customize Form Field","label":"Amended From","options":"Request for Quotation","_sortable":false},{"name":"51651a0747","parent":"Customize Form","parentfield":"fields","parenttype":"Customize Form","idx":9,"docstatus":0,"fieldtype":"Section Break","fieldname":"suppliers_section","non_negative":0,"reqd":0,"unique":0,"in_list_view":0,"in_standard_filter":0,"in_global_search":0,"in_preview":0,"bold":0,"allow_in_quick_entry":0,"translatable":0,"length":0,"fetch_if_empty":0,"permlevel":0,"hidden":0,"read_only":0,"collapsible":0,"allow_bulk_edit":0,"ignore_user_permissions":0,"allow_on_submit":0,"report_hide":0,"remember_last_selected_value":0,"hide_border":0,"in_filter":0,"hide_seconds":0,"hide_days":0,"print_hide":0,"print_hide_if_no_value":0,"columns":0,"is_custom_field":0,"doctype":"Customize Form Field","_sortable":false},{"name":"dc628a42be","parent":"Customize Form","parentfield":"fields","parenttype":"Customize Form","idx":10,"docstatus":0,"fieldtype":"Table","fieldname":"suppliers","non_negative":0,"reqd":1,"unique":0,"in_list_view":0,"in_standard_filter":0,"in_global_search":0,"in_preview":0,"bold":0,"allow_in_quick_entry":0,"translatable":0,"length":0,"fetch_if_empty":0,"permlevel":0,"hidden":0,"read_only":0,"collapsible":0,"allow_bulk_edit":0,"ignore_user_permissions":0,"allow_on_submit":0,"report_hide":0,"remember_last_selected_value":0,"hide_border":0,"in_filter":0,"hide_seconds":0,"hide_days":0,"print_hide":1,"print_hide_if_no_value":0,"columns":0,"is_custom_field":0,"doctype":"Customize Form Field","label":"Suppliers","options":"Request for Quotation Supplier","_sortable":false},{"name":"8eeef2a88f","parent":"Customize Form","parentfield":"fields","parenttype":"Customize Form","idx":11,"docstatus":0,"fieldtype":"Section Break","fieldname":"items_section","non_negative":0,"reqd":0,"unique":0,"in_list_view":0,"in_standard_filter":0,"in_global_search":0,"in_preview":0,"bold":0,"allow_in_quick_entry":0,"translatable":0,"length":0,"options":"fa fa-shopping-cart","fetch_if_empty":0,"permlevel":0,"hidden":0,"read_only":0,"collapsible":0,"allow_bulk_edit":0,"ignore_user_permissions":0,"allow_on_submit":0,"report_hide":0,"remember_last_selected_value":0,"hide_border":0,"in_filter":0,"hide_seconds":0,"hide_days":0,"print_hide":0,"print_hide_if_no_value":0,"columns":0,"is_custom_field":0,"doctype":"Customize Form Field","_sortable":false},{"name":"b956c7b0df","parent":"Customize Form","parentfield":"fields","parenttype":"Customize Form","idx":12,"docstatus":0,"fieldtype":"Table","fieldname":"items","non_negative":0,"reqd":1,"unique":0,"in_list_view":0,"in_standard_filter":0,"in_global_search":0,"in_preview":0,"bold":0,"allow_in_quick_entry":0,"translatable":0,"length":0,"fetch_if_empty":0,"permlevel":0,"hidden":0,"read_only":0,"collapsible":0,"allow_bulk_edit":0,"ignore_user_permissions":0,"allow_on_submit":0,"report_hide":0,"remember_last_selected_value":0,"hide_border":0,"in_filter":0,"hide_seconds":0,"hide_days":0,"print_hide":0,"print_hide_if_no_value":0,"columns":0,"is_custom_field":0,"doctype":"Customize Form Field","label":"Items","options":"Request for Quotation Item","_sortable":false},{"name":"cbf72e9a7e","parent":"Customize Form","parentfield":"fields","parenttype":"Customize Form","idx":13,"docstatus":0,"label":"Email Details","fieldtype":"Section Break","fieldname":"supplier_response_section","non_negative":0,"reqd":0,"unique":0,"in_list_view":0,"in_standard_filter":0,"in_global_search":0,"in_preview":0,"bold":0,"allow_in_quick_entry":0,"translatable":0,"length":0,"fetch_if_empty":0,"permlevel":0,"hidden":1,"read_only":0,"collapsible":0,"allow_bulk_edit":0,"ignore_user_permissions":0,"allow_on_submit":0,"report_hide":0,"remember_last_selected_value":0,"hide_border":0,"in_filter":0,"hide_seconds":0,"hide_days":0,"print_hide":0,"print_hide_if_no_value":0,"columns":0,"is_custom_field":0,"doctype":"Customize Form Field","_sortable":false},{"name":"d555de8d78","parent":"Customize Form","parentfield":"fields","parenttype":"Customize Form","idx":14,"docstatus":0,"fieldtype":"Link","fieldname":"salutation","non_negative":0,"reqd":0,"unique":0,"in_list_view":0,"in_standard_filter":0,"in_global_search":0,"in_preview":0,"bold":0,"allow_in_quick_entry":0,"translatable":0,"length":0,"fetch_if_empty":0,"permlevel":0,"hidden":0,"read_only":0,"collapsible":0,"allow_bulk_edit":0,"ignore_user_permissions":0,"allow_on_submit":0,"report_hide":0,"remember_last_selected_value":0,"hide_border":0,"in_filter":0,"hide_seconds":0,"hide_days":0,"print_hide":1,"print_hide_if_no_value":0,"columns":0,"is_custom_field":0,"doctype":"Customize Form Field","label":"Salutation","options":"Salutation","description":"Select a greeting for the receiver. E.g. Mr., Ms., etc.","_sortable":false},{"name":"5011deb6a6","parent":"Customize Form","parentfield":"fields","parenttype":"Customize Form","idx":15,"docstatus":0,"fieldtype":"Data","fieldname":"subject","non_negative":0,"reqd":0,"unique":0,"in_list_view":0,"in_standard_filter":0,"in_global_search":0,"in_preview":0,"bold":0,"allow_in_quick_entry":0,"translatable":0,"length":0,"fetch_if_empty":1,"permlevel":0,"hidden":0,"read_only":0,"collapsible":0,"allow_bulk_edit":0,"ignore_user_permissions":0,"allow_on_submit":0,"report_hide":0,"remember_last_selected_value":0,"hide_border":0,"in_filter":0,"hide_seconds":0,"hide_days":0,"print_hide":1,"print_hide_if_no_value":0,"columns":0,"is_custom_field":0,"doctype":"Customize Form Field","label":"Subject","fetch_from":"email_template.subject","_sortable":false},{"name":"6718f1273e","parent":"Customize Form","parentfield":"fields","parenttype":"Customize Form","idx":16,"docstatus":0,"fieldtype":"Column Break","fieldname":"col_break_email_1","non_negative":0,"reqd":0,"unique":0,"in_list_view":0,"in_standard_filter":0,"in_global_search":0,"in_preview":0,"bold":0,"allow_in_quick_entry":0,"translatable":0,"length":0,"fetch_if_empty":0,"permlevel":0,"hidden":0,"read_only":0,"collapsible":0,"allow_bulk_edit":0,"ignore_user_permissions":0,"allow_on_submit":0,"report_hide":0,"remember_last_selected_value":0,"hide_border":0,"in_filter":0,"hide_seconds":0,"hide_days":0,"print_hide":0,"print_hide_if_no_value":0,"columns":0,"is_custom_field":0,"doctype":"Customize Form Field","_sortable":false},{"name":"f5ff361b05","parent":"Customize Form","parentfield":"fields","parenttype":"Customize Form","idx":17,"docstatus":0,"fieldtype":"Link","fieldname":"email_template","non_negative":0,"reqd":0,"unique":0,"in_list_view":0,"in_standard_filter":0,"in_global_search":0,"in_preview":0,"bold":0,"allow_in_quick_entry":0,"translatable":0,"length":0,"fetch_if_empty":0,"permlevel":0,"hidden":0,"read_only":0,"collapsible":0,"allow_bulk_edit":0,"ignore_user_permissions":0,"allow_on_submit":0,"report_hide":0,"remember_last_selected_value":0,"hide_border":0,"in_filter":0,"hide_seconds":0,"hide_days":0,"print_hide":1,"print_hide_if_no_value":0,"columns":0,"is_custom_field":0,"doctype":"Customize Form Field","options":"Email Template","label":"Email Template","_sortable":false},{"name":"8afa2ccfdb","parent":"Customize Form","parentfield":"fields","parenttype":"Customize Form","idx":18,"docstatus":0,"label":"Preview Email","fieldtype":"Button","fieldname":"preview","non_negative":0,"reqd":0,"unique":0,"in_list_view":0,"in_standard_filter":0,"in_global_search":0,"in_preview":0,"bold":0,"allow_in_quick_entry":0,"translatable":0,"length":0,"fetch_if_empty":0,"permlevel":0,"hidden":0,"read_only":0,"collapsible":0,"allow_bulk_edit":0,"ignore_user_permissions":0,"allow_on_submit":0,"report_hide":0,"remember_last_selected_value":0,"hide_border":0,"in_filter":0,"hide_seconds":0,"hide_days":0,"print_hide":0,"print_hide_if_no_value":0,"columns":0,"is_custom_field":0,"doctype":"Customize Form Field","depends_on":"eval:!doc.docstatus==1","_sortable":false},{"name":"9fb3b6cb41","parent":"Customize Form","parentfield":"fields","parenttype":"Customize Form","idx":19,"docstatus":0,"fieldtype":"Section Break","fieldname":"sec_break_email_2","non_negative":0,"reqd":0,"unique":0,"in_list_view":0,"in_standard_filter":0,"in_global_search":0,"in_preview":0,"bold":0,"allow_in_quick_entry":0,"translatable":0,"length":0,"fetch_if_empty":0,"permlevel":0,"hidden":0,"read_only":0,"collapsible":0,"allow_bulk_edit":0,"ignore_user_permissions":0,"allow_on_submit":0,"report_hide":0,"remember_last_selected_value":0,"hide_border":1,"in_filter":0,"hide_seconds":0,"hide_days":0,"print_hide":0,"print_hide_if_no_value":0,"columns":0,"is_custom_field":0,"doctype":"Customize Form Field","depends_on":"eval:!doc.__islocal","_sortable":false},{"name":"b4bf682e9e","parent":"Customize Form","parentfield":"fields","parenttype":"Customize Form","idx":20,"docstatus":0,"label":"Message for Supplier","fieldtype":"Text Editor","fieldname":"message_for_supplier","non_negative":0,"reqd":1,"unique":0,"in_list_view":1,"in_standard_filter":0,"in_global_search":0,"in_preview":0,"bold":0,"allow_in_quick_entry":0,"translatable":0,"length":0,"fetch_if_empty":1,"permlevel":0,"hidden":0,"read_only":0,"collapsible":0,"allow_bulk_edit":0,"ignore_user_permissions":0,"allow_on_submit":1,"report_hide":0,"remember_last_selected_value":0,"hide_border":0,"in_filter":0,"hide_seconds":0,"hide_days":0,"print_hide":1,"print_hide_if_no_value":0,"columns":0,"is_custom_field":0,"doctype":"Customize Form Field","fetch_from":"email_template.response","_sortable":false},{"name":"a7317f2984","parent":"Customize Form","parentfield":"fields","parenttype":"Customize Form","idx":21,"docstatus":0,"label":"Terms and Conditions","fieldtype":"Section Break","fieldname":"terms_section_break","non_negative":0,"reqd":0,"unique":0,"in_list_view":0,"in_standard_filter":0,"in_global_search":0,"in_preview":0,"bold":0,"allow_in_quick_entry":0,"translatable":0,"length":0,"fetch_if_empty":0,"permlevel":0,"hidden":1,"read_only":0,"collapsible":1,"allow_bulk_edit":0,"ignore_user_permissions":0,"allow_on_submit":0,"report_hide":0,"remember_last_selected_value":0,"hide_border":0,"in_filter":0,"hide_seconds":0,"hide_days":0,"print_hide":0,"print_hide_if_no_value":0,"columns":0,"is_custom_field":0,"doctype":"Customize Form Field","options":"fa fa-legal","collapsible_depends_on":"terms","_sortable":false},{"name":"4873f1e7c9","parent":"Customize Form","parentfield":"fields","parenttype":"Customize Form","idx":22,"docstatus":0,"fieldtype":"Link","fieldname":"tc_name","non_negative":0,"reqd":0,"unique":0,"in_list_view":0,"in_standard_filter":0,"in_global_search":0,"in_preview":0,"bold":0,"allow_in_quick_entry":0,"translatable":0,"length":0,"fetch_if_empty":0,"permlevel":0,"hidden":0,"read_only":0,"collapsible":0,"allow_bulk_edit":0,"ignore_user_permissions":0,"allow_on_submit":0,"report_hide":0,"remember_last_selected_value":0,"hide_border":0,"in_filter":0,"hide_seconds":0,"hide_days":0,"print_hide":1,"print_hide_if_no_value":0,"columns":0,"is_custom_field":0,"doctype":"Customize Form Field","label":"Terms","options":"Terms and Conditions","_sortable":false},{"name":"1ea356ef8b","parent":"Customize Form","parentfield":"fields","parenttype":"Customize Form","idx":23,"docstatus":0,"fieldtype":"Text Editor","fieldname":"terms","non_negative":0,"reqd":0,"unique":0,"in_list_view":0,"in_standard_filter":0,"in_global_search":0,"in_preview":0,"bold":0,"allow_in_quick_entry":0,"translatable":0,"length":0,"fetch_if_empty":0,"permlevel":0,"hidden":0,"read_only":0,"collapsible":0,"allow_bulk_edit":0,"ignore_user_permissions":0,"allow_on_submit":0,"report_hide":0,"remember_last_selected_value":0,"hide_border":0,"in_filter":0,"hide_seconds":0,"hide_days":0,"print_hide":0,"print_hide_if_no_value":0,"columns":0,"is_custom_field":0,"doctype":"Customize Form Field","label":"Terms and Conditions","_sortable":false},{"name":"a47c25988d","parent":"Customize Form","parentfield":"fields","parenttype":"Customize Form","idx":24,"docstatus":0,"label":"Printing Settings","fieldtype":"Section Break","fieldname":"printing_settings","non_negative":0,"reqd":0,"unique":0,"in_list_view":0,"in_standard_filter":0,"in_global_search":0,"in_preview":0,"bold":0,"allow_in_quick_entry":0,"translatable":0,"length":0,"fetch_if_empty":0,"permlevel":0,"hidden":1,"read_only":0,"collapsible":1,"allow_bulk_edit":0,"ignore_user_permissions":0,"allow_on_submit":0,"report_hide":0,"remember_last_selected_value":0,"hide_border":0,"in_filter":0,"hide_seconds":0,"hide_days":0,"print_hide":0,"print_hide_if_no_value":0,"columns":0,"is_custom_field":0,"doctype":"Customize Form Field","_sortable":false},{"name":"8b2002ceee","parent":"Customize Form","parentfield":"fields","parenttype":"Customize Form","idx":25,"docstatus":0,"label":"Print Heading","fieldtype":"Link","fieldname":"select_print_heading","non_negative":0,"reqd":0,"unique":0,"in_list_view":0,"in_standard_filter":0,"in_global_search":0,"in_preview":0,"bold":0,"allow_in_quick_entry":0,"translatable":0,"length":0,"fetch_if_empty":0,"permlevel":0,"hidden":0,"read_only":0,"collapsible":0,"allow_bulk_edit":0,"ignore_user_permissions":0,"allow_on_submit":1,"report_hide":1,"remember_last_selected_value":0,"hide_border":0,"in_filter":0,"hide_seconds":0,"hide_days":0,"print_hide":1,"print_hide_if_no_value":0,"columns":0,"is_custom_field":0,"doctype":"Customize Form Field","options":"Print Heading","_sortable":false},{"name":"6785dc13e9","parent":"Customize Form","parentfield":"fields","parenttype":"Customize Form","idx":26,"docstatus":0,"fieldtype":"Link","fieldname":"letter_head","non_negative":0,"reqd":0,"unique":0,"in_list_view":0,"in_standard_filter":0,"in_global_search":0,"in_preview":0,"bold":0,"allow_in_quick_entry":0,"translatable":0,"length":0,"fetch_if_empty":0,"permlevel":0,"hidden":0,"read_only":0,"collapsible":0,"allow_bulk_edit":0,"ignore_user_permissions":0,"allow_on_submit":1,"report_hide":0,"remember_last_selected_value":0,"hide_border":0,"in_filter":0,"hide_seconds":0,"hide_days":0,"print_hide":1,"print_hide_if_no_value":0,"columns":0,"is_custom_field":0,"doctype":"Customize Form Field","label":"Letter Head","options":"Letter Head","_sortable":false}],"actions":[],"links":[],"doc_type":"Request for Quotation","__unsaved":1,"label":"","autoname":"naming_series:","sort_field":"modified","search_fields":"status, transaction_date"}', 'method': 'save_customization', 'cmd': 'run_doc_method'}
+2022-01-15 08:39:49,022 ERROR frappe Could not take error snapshot: characters_written
+Site: sanctity.erpeaz.com
+Form Dict: {'doc': '{"name":"Interview Details","creation":"2022-01-15 11:43:36.411338","modified":"2022-01-15 14:08:37.343466","modified_by":"Administrator","owner":"Administrator","docstatus":0,"idx":0,"issingle":0,"is_tree":0,"istable":0,"editable_grid":1,"track_changes":0,"module":"HR","autoname":"SF-TEMP-ID-.####","name_case":"","title_field":"applicant_name","sort_field":"modified","sort_order":"DESC","read_only":0,"in_create":0,"allow_copy":0,"allow_rename":1,"allow_import":0,"hide_toolbar":0,"track_seen":0,"max_attachments":0,"document_type":"","engine":"InnoDB","is_submittable":0,"show_name_in_global_search":0,"custom":1,"beta":0,"has_web_view":0,"allow_guest_to_view":0,"email_append_to":0,"quick_entry":0,"track_views":0,"is_virtual":0,"allow_events_in_timeline":0,"allow_auto_repeat":0,"show_preview_popup":0,"index_web_pages_for_search":1,"doctype":"DocType","fields":[{"name":"716950e52f","creation":"2022-01-15 11:43:36.411338","modified":"2022-01-15 14:08:37.343466","modified_by":"Administrator","owner":"Administrator","docstatus":0,"parent":"Interview Details","parentfield":"fields","parenttype":"DocType","idx":1,"fieldname":"interview_details_section","label":" Interview Details","fieldtype":"Section Break","search_index":0,"hidden":0,"set_only_once":0,"allow_in_quick_entry":0,"print_hide":0,"report_hide":0,"reqd":0,"bold":0,"in_global_search":0,"collapsible":0,"unique":0,"no_copy":0,"allow_on_submit":0,"show_preview_popup":0,"permlevel":0,"ignore_user_permissions":0,"columns":0,"in_list_view":0,"fetch_if_empty":0,"in_filter":0,"remember_last_selected_value":0,"ignore_xss_filter":0,"print_hide_if_no_value":0,"allow_bulk_edit":0,"in_standard_filter":0,"in_preview":0,"read_only":0,"precision":"","length":0,"translatable":0,"hide_border":0,"hide_days":0,"hide_seconds":0,"non_negative":0,"doctype":"DocField"},{"name":"08f46cf270","creation":"2022-01-15 11:43:36.411338","modified":"2022-01-15 14:08:37.343466","modified_by":"Administrator","owner":"Administrator","docstatus":0,"parent":"Interview Details","parentfield":"fields","parenttype":"DocType","idx":2,"fieldname":"job_applicant","label":"Job Applicant","fieldtype":"Link","options":"Job Applicant","search_index":0,"hidden":0,"set_only_once":0,"allow_in_quick_entry":0,"print_hide":0,"report_hide":0,"reqd":0,"bold":0,"in_global_search":0,"collapsible":0,"unique":0,"no_copy":0,"allow_on_submit":0,"show_preview_popup":0,"permlevel":0,"ignore_user_permissions":0,"columns":0,"in_list_view":0,"fetch_if_empty":0,"in_filter":0,"remember_last_selected_value":0,"ignore_xss_filter":0,"print_hide_if_no_value":0,"allow_bulk_edit":0,"in_standard_filter":0,"in_preview":0,"read_only":0,"precision":"","length":0,"translatable":0,"hide_border":0,"hide_days":0,"hide_seconds":0,"non_negative":0,"doctype":"DocField"},{"name":"5c9998b226","creation":"2022-01-15 11:43:36.411338","modified":"2022-01-15 14:08:37.343466","modified_by":"Administrator","owner":"Administrator","docstatus":0,"parent":"Interview Details","parentfield":"fields","parenttype":"DocType","idx":3,"fieldname":"applicant_name","label":"Applicant Name","fieldtype":"Data","search_index":0,"hidden":0,"set_only_once":0,"allow_in_quick_entry":0,"print_hide":0,"report_hide":0,"reqd":0,"bold":0,"in_global_search":0,"collapsible":0,"unique":0,"no_copy":0,"allow_on_submit":0,"show_preview_popup":0,"permlevel":0,"ignore_user_permissions":0,"columns":0,"in_list_view":0,"fetch_if_empty":0,"in_filter":0,"remember_last_selected_value":0,"ignore_xss_filter":0,"print_hide_if_no_value":0,"allow_bulk_edit":0,"in_standard_filter":0,"in_preview":0,"read_only":0,"precision":"","length":0,"translatable":0,"hide_border":0,"hide_days":0,"hide_seconds":0,"non_negative":0,"doctype":"DocField","fetch_from":"job_applicant.applicant_name"},{"name":"89b762a0df","creation":"2022-01-15 11:43:36.411338","modified":"2022-01-15 14:08:37.343466","modified_by":"Administrator","owner":"Administrator","docstatus":0,"parent":"Interview Details","parentfield":"fields","parenttype":"DocType","idx":4,"fieldname":"email_id","label":"Email Id","fieldtype":"Data","search_index":0,"hidden":0,"set_only_once":0,"allow_in_quick_entry":0,"print_hide":0,"report_hide":0,"reqd":0,"bold":0,"in_global_search":0,"collapsible":0,"unique":0,"no_copy":0,"allow_on_submit":0,"show_preview_popup":0,"permlevel":0,"ignore_user_permissions":0,"columns":0,"in_list_view":0,"fetch_if_empty":0,"in_filter":0,"remember_last_selected_value":0,"ignore_xss_filter":0,"print_hide_if_no_value":0,"allow_bulk_edit":0,"in_standard_filter":0,"in_preview":0,"read_only":0,"precision":"","length":0,"translatable":0,"hide_border":0,"hide_days":0,"hide_seconds":0,"non_negative":0,"doctype":"DocField","fetch_from":"job_applicant.email_id"},{"name":"e7fc8df0a5","creation":"2022-01-15 11:43:36.411338","modified":"2022-01-15 14:08:37.343466","modified_by":"Administrator","owner":"Administrator","docstatus":0,"parent":"Interview Details","parentfield":"fields","parenttype":"DocType","idx":5,"fieldname":"job_opening","label":"Job Opening","fieldtype":"Data","search_index":0,"hidden":0,"set_only_once":0,"allow_in_quick_entry":0,"print_hide":0,"report_hide":0,"reqd":0,"bold":0,"in_global_search":0,"collapsible":0,"unique":0,"no_copy":0,"allow_on_submit":0,"show_preview_popup":0,"permlevel":0,"ignore_user_permissions":0,"columns":0,"in_list_view":0,"fetch_if_empty":0,"in_filter":0,"remember_last_selected_value":0,"ignore_xss_filter":0,"print_hide_if_no_value":0,"allow_bulk_edit":0,"in_standard_filter":0,"in_preview":0,"read_only":0,"precision":"","length":0,"translatable":0,"hide_border":0,"hide_days":0,"hide_seconds":0,"non_negative":0,"doctype":"DocField","fetch_from":"job_applicant.job_title"},{"name":"198eebe8f1","creation":"2022-01-15 11:43:36.411338","modified":"2022-01-15 14:08:37.343466","modified_by":"Administrator","owner":"Administrator","docstatus":0,"parent":"Interview Details","parentfield":"fields","parenttype":"DocType","idx":6,"fieldname":"column_break_6","fieldtype":"Column Break","search_index":0,"hidden":0,"set_only_once":0,"allow_in_quick_entry":0,"print_hide":0,"report_hide":0,"reqd":0,"bold":0,"in_global_search":0,"collapsible":0,"unique":0,"no_copy":0,"allow_on_submit":0,"show_preview_popup":0,"permlevel":0,"ignore_user_permissions":0,"columns":0,"in_list_view":0,"fetch_if_empty":0,"in_filter":0,"remember_last_selected_value":0,"ignore_xss_filter":0,"print_hide_if_no_value":0,"allow_bulk_edit":0,"in_standard_filter":0,"in_preview":0,"read_only":0,"precision":"","length":0,"translatable":0,"hide_border":0,"hide_days":0,"hide_seconds":0,"non_negative":0,"doctype":"DocField"},{"name":"16fe85e4b6","creation":"2022-01-15 11:43:36.411338","modified":"2022-01-15 14:08:37.343466","modified_by":"Administrator","owner":"Administrator","docstatus":0,"parent":"Interview Details","parentfield":"fields","parenttype":"DocType","idx":7,"fieldname":"interview_round","label":"Interview Round","fieldtype":"Date","search_index":0,"hidden":0,"set_only_once":0,"allow_in_quick_entry":0,"print_hide":0,"report_hide":0,"reqd":0,"bold":0,"in_global_search":0,"collapsible":0,"unique":0,"no_copy":0,"allow_on_submit":0,"show_preview_popup":0,"permlevel":0,"ignore_user_permissions":0,"columns":0,"in_list_view":0,"fetch_if_empty":0,"in_filter":0,"remember_last_selected_value":0,"ignore_xss_filter":0,"print_hide_if_no_value":0,"allow_bulk_edit":0,"in_standard_filter":0,"in_preview":0,"read_only":0,"precision":"","length":0,"translatable":0,"hide_border":0,"hide_days":0,"hide_seconds":0,"non_negative":0,"doctype":"DocField","fetch_from":"job_applicant.interview_round"},{"name":"c9d9642f5d","creation":"2022-01-15 11:43:36.411338","modified":"2022-01-15 14:08:37.343466","modified_by":"Administrator","owner":"Administrator","docstatus":0,"parent":"Interview Details","parentfield":"fields","parenttype":"DocType","idx":8,"fieldname":"interview_date","label":"Interview Date","fieldtype":"Date","search_index":0,"hidden":0,"set_only_once":0,"allow_in_quick_entry":0,"print_hide":0,"report_hide":0,"reqd":0,"bold":0,"in_global_search":0,"collapsible":0,"unique":0,"no_copy":0,"allow_on_submit":0,"show_preview_popup":0,"permlevel":0,"ignore_user_permissions":0,"columns":0,"in_list_view":0,"fetch_if_empty":0,"in_filter":0,"remember_last_selected_value":0,"ignore_xss_filter":0,"print_hide_if_no_value":0,"allow_bulk_edit":0,"in_standard_filter":0,"in_preview":0,"read_only":0,"precision":"","length":0,"translatable":0,"hide_border":0,"hide_days":0,"hide_seconds":0,"non_negative":0,"doctype":"DocField","default":"job_applicant.interview date"},{"name":"d2c2e98584","creation":"2022-01-15 11:43:36.411338","modified":"2022-01-15 14:08:37.343466","modified_by":"Administrator","owner":"Administrator","docstatus":0,"parent":"Interview Details","parentfield":"fields","parenttype":"DocType","idx":9,"fieldname":"interview_time","label":"Interview Time","fieldtype":"Time","search_index":0,"hidden":0,"set_only_once":0,"allow_in_quick_entry":0,"print_hide":0,"report_hide":0,"reqd":0,"bold":0,"in_global_search":0,"collapsible":0,"unique":0,"no_copy":0,"allow_on_submit":0,"show_preview_popup":0,"permlevel":0,"ignore_user_permissions":0,"columns":0,"in_list_view":0,"fetch_if_empty":0,"in_filter":0,"remember_last_selected_value":0,"ignore_xss_filter":0,"print_hide_if_no_value":0,"allow_bulk_edit":0,"in_standard_filter":0,"in_preview":0,"read_only":0,"precision":"","length":0,"translatable":0,"hide_border":0,"hide_days":0,"hide_seconds":0,"non_negative":0,"doctype":"DocField","fetch_from":"job_applicant_interview_time"},{"name":"9b5dae3811","creation":"2022-01-15 11:43:36.411338","modified":"2022-01-15 14:08:37.343466","modified_by":"Administrator","owner":"Administrator","docstatus":0,"parent":"Interview Details","parentfield":"fields","parenttype":"DocType","idx":10,"fieldname":"resume_link","label":"Resume LInk","fieldtype":"Attach","search_index":0,"hidden":0,"set_only_once":0,"allow_in_quick_entry":0,"print_hide":0,"report_hide":0,"reqd":0,"bold":0,"in_global_search":0,"collapsible":0,"unique":0,"no_copy":0,"allow_on_submit":0,"show_preview_popup":0,"permlevel":0,"ignore_user_permissions":0,"columns":0,"in_list_view":0,"fetch_if_empty":0,"in_filter":0,"remember_last_selected_value":0,"ignore_xss_filter":0,"print_hide_if_no_value":0,"allow_bulk_edit":0,"in_standard_filter":0,"in_preview":0,"read_only":0,"precision":"","length":0,"translatable":0,"hide_border":0,"hide_days":0,"hide_seconds":0,"non_negative":0,"doctype":"DocField"},{"name":"efc2a918cb","creation":"2022-01-15 11:43:36.411338","modified":"2022-01-15 14:08:37.343466","modified_by":"Administrator","owner":"Administrator","docstatus":0,"parent":"Interview Details","parentfield":"fields","parenttype":"DocType","idx":11,"fieldname":"interview_panel_1","label":"Interview Panel 1","fieldtype":"Link","options":"User","search_index":0,"hidden":0,"set_only_once":0,"allow_in_quick_entry":0,"print_hide":0,"report_hide":0,"reqd":0,"bold":0,"in_global_search":0,"collapsible":0,"unique":0,"no_copy":0,"allow_on_submit":0,"show_preview_popup":0,"permlevel":0,"ignore_user_permissions":0,"columns":0,"in_list_view":0,"fetch_if_empty":0,"in_filter":0,"remember_last_selected_value":0,"ignore_xss_filter":0,"print_hide_if_no_value":0,"allow_bulk_edit":0,"in_standard_filter":0,"in_preview":0,"read_only":0,"precision":"","length":0,"translatable":0,"hide_border":0,"hide_days":0,"hide_seconds":0,"non_negative":0,"doctype":"DocField"},{"name":"07d6df82a1","creation":"2022-01-15 11:43:36.411338","modified":"2022-01-15 14:08:37.343466","modified_by":"Administrator","owner":"Administrator","docstatus":0,"parent":"Interview Details","parentfield":"fields","parenttype":"DocType","idx":12,"fieldname":"interview_panel_2","label":"Interview Panel 2","fieldtype":"Link","options":"User","search_index":0,"hidden":0,"set_only_once":0,"allow_in_quick_entry":0,"print_hide":0,"report_hide":0,"reqd":0,"bold":0,"in_global_search":0,"collapsible":0,"unique":0,"no_copy":0,"allow_on_submit":0,"show_preview_popup":0,"permlevel":0,"ignore_user_permissions":0,"columns":0,"in_list_view":0,"fetch_if_empty":0,"in_filter":0,"remember_last_selected_value":0,"ignore_xss_filter":0,"print_hide_if_no_value":0,"allow_bulk_edit":0,"in_standard_filter":0,"in_preview":0,"read_only":0,"precision":"","length":0,"translatable":0,"hide_border":0,"hide_days":0,"hide_seconds":0,"non_negative":0,"doctype":"DocField"}],"permissions":[{"name":"a7d0873d6e","creation":"2022-01-15 11:43:36.411338","modified":"2022-01-15 14:08:37.343466","modified_by":"Administrator","owner":"Administrator","docstatus":0,"parent":"Interview Details","parentfield":"permissions","parenttype":"DocType","idx":1,"permlevel":0,"role":"System Manager","read":1,"write":1,"create":1,"submit":0,"cancel":0,"delete":1,"amend":0,"report":1,"export":1,"import":0,"share":1,"print":1,"email":1,"if_owner":0,"select":0,"set_user_permissions":0,"doctype":"DocPerm"}],"actions":[],"links":[],"__unsaved":1}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
+Traceback (most recent call last):
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/database/mariadb/schema.py", line 75, in alter
+    frappe.db.sql(query)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/database/database.py", line 154, in sql
+    self._cursor.execute(query)
+  File "/home/erpnext/frappe-bench/env/lib/python3.6/site-packages/pymysql/cursors.py", line 148, in execute
+    result = self._query(query)
+  File "/home/erpnext/frappe-bench/env/lib/python3.6/site-packages/pymysql/cursors.py", line 310, in _query
+    conn.query(q)
+  File "/home/erpnext/frappe-bench/env/lib/python3.6/site-packages/pymysql/connections.py", line 548, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/home/erpnext/frappe-bench/env/lib/python3.6/site-packages/pymysql/connections.py", line 775, in _read_query_result
+    result.read()
+  File "/home/erpnext/frappe-bench/env/lib/python3.6/site-packages/pymysql/connections.py", line 1156, in read
+    first_packet = self.connection._read_packet()
+  File "/home/erpnext/frappe-bench/env/lib/python3.6/site-packages/pymysql/connections.py", line 725, in _read_packet
+    packet.raise_for_error()
+  File "/home/erpnext/frappe-bench/env/lib/python3.6/site-packages/pymysql/protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "/home/erpnext/frappe-bench/env/lib/python3.6/site-packages/pymysql/err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1067, "Invalid default value for 'interview_date'")
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/core/doctype/doctype/doctype.py", line 299, in on_update
+    frappe.db.updatedb(self.name, Meta(self))
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 298, in updatedb
+    db_table.sync()
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/database/schema.py", line 40, in sync
+    self.alter()
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/database/mariadb/schema.py", line 86, in alter
+    frappe.throw(str(e.args[1]))
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/__init__.py", line 439, in throw
+    msgprint(msg, raise_exception=exc, title=title, indicator='red', is_minimizable=is_minimizable, wide=wide, as_list=as_list)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/__init__.py", line 418, in msgprint
+    _raise_exception()
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/__init__.py", line 372, in _raise_exception
+    raise raise_exception(msg)
+frappe.exceptions.ValidationError: Invalid default value for 'interview_date'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/app.py", line 68, in application
+    response = frappe.api.handle()
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/api.py", line 55, in handle
+    return frappe.handler.handle()
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/handler.py", line 31, in handle
+    data = execute_cmd(cmd)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/handler.py", line 67, in execute_cmd
+    return frappe.call(method, **frappe.form_dict)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/__init__.py", line 1208, in call
+    return fn(*args, **newargs)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/desk/form/save.py", line 21, in savedocs
+    doc.save()
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/model/document.py", line 285, in save
+    return self._save(*args, **kwargs)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/model/document.py", line 339, in _save
+    self.run_post_save_methods()
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/model/document.py", line 1002, in run_post_save_methods
+    self.run_method("on_update")
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/model/document.py", line 866, in run_method
+    out = Document.hook(fn)(self, *args, **kwargs)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/model/document.py", line 1159, in composer
+    return composed(self, method, *args, **kwargs)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/model/document.py", line 1142, in runner
+    add_to_return_value(self, fn(self, *args, **kwargs))
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/model/document.py", line 860, in <lambda>
+    fn = lambda self, *args, **kwargs: getattr(self, method)(*args, **kwargs)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/core/doctype/doctype/doctype.py", line 301, in on_update
+    print("\n\nThere was an issue while migrating the DocType: {}\n".format(self.name))
+BrokenPipeError: [Errno 32] Broken pipe
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/utils/error.py", line 36, in make_error_snapshot
+    snapshot = get_snapshot(exception)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/utils/error.py", line 127, in get_snapshot
+    value = pydoc.text.repr(getattr(evalue, name))
+AttributeError: characters_written
+2022-01-16 16:33:12,445 ERROR frappe Could not take error snapshot: characters_written
+Site: sanctity.erpeaz.com
+Form Dict: {'name': 'SF-SQTN-2022-00001', 'doctype': 'Supplier Quotation', 'parents': [{'label': 'Supplier Quotation', 'route': 'supplier-quotations'}]}
+Traceback (most recent call last):
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/context.py", line 56, in update_controller_context
+    ret = module.get_context(context)
+  File "/home/erpnext/frappe-bench/apps/erpnext/erpnext/templates/pages/order.py", line 38, in get_context
+    customer_loyalty_program = frappe.db.get_value("Customer", context.doc.customer, "loyalty_program")
+AttributeError: 'SupplierQuotation' object has no attribute 'customer'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/render.py", line 49, in render
+    data = render_page_by_language(path)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/render.py", line 178, in render_page_by_language
+    return render_page(path)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/render.py", line 194, in render_page
+    return build(path)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/render.py", line 201, in build
+    return build_page(path)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/render.py", line 216, in build_page
+    context = get_context(path)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/context.py", line 28, in get_context
+    context = build_context(context)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/context.py", line 108, in build_context
+    update_controller_context(context, context.controller)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/context.py", line 65, in update_controller_context
+    frappe.errprint(frappe.utils.get_traceback())
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/__init__.py", line 329, in errprint
+    print(msg)
+BrokenPipeError: [Errno 32] Broken pipe
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/context.py", line 56, in update_controller_context
+    ret = module.get_context(context)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/www/error.py", line 11, in get_context
+    print(frappe.get_traceback().encode("utf-8"))
+BrokenPipeError: [Errno 32] Broken pipe
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/app.py", line 77, in application
+    response = frappe.website.render.render()
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/render.py", line 79, in render
+    data = render_page(path)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/render.py", line 194, in render_page
+    return build(path)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/render.py", line 201, in build
+    return build_page(path)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/render.py", line 216, in build_page
+    context = get_context(path)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/context.py", line 28, in get_context
+    context = build_context(context)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/context.py", line 108, in build_context
+    update_controller_context(context, context.controller)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/context.py", line 65, in update_controller_context
+    frappe.errprint(frappe.utils.get_traceback())
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/__init__.py", line 329, in errprint
+    print(msg)
+BrokenPipeError: [Errno 32] Broken pipe
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/utils/error.py", line 36, in make_error_snapshot
+    snapshot = get_snapshot(exception)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/utils/error.py", line 127, in get_snapshot
+    value = pydoc.text.repr(getattr(evalue, name))
+AttributeError: characters_written
+2022-01-16 22:01:02,437 ERROR frappe Could not take error snapshot: characters_written
+Site: sanctity.erpeaz.com
+Form Dict: {'name': 'SF-SQTN-2022-00002', 'doctype': 'Supplier Quotation', 'parents': [{'label': 'Supplier Quotation', 'route': 'supplier-quotations'}]}
+Traceback (most recent call last):
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/context.py", line 56, in update_controller_context
+    ret = module.get_context(context)
+  File "/home/erpnext/frappe-bench/apps/erpnext/erpnext/templates/pages/order.py", line 38, in get_context
+    customer_loyalty_program = frappe.db.get_value("Customer", context.doc.customer, "loyalty_program")
+AttributeError: 'SupplierQuotation' object has no attribute 'customer'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/render.py", line 49, in render
+    data = render_page_by_language(path)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/render.py", line 178, in render_page_by_language
+    return render_page(path)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/render.py", line 194, in render_page
+    return build(path)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/render.py", line 201, in build
+    return build_page(path)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/render.py", line 216, in build_page
+    context = get_context(path)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/context.py", line 28, in get_context
+    context = build_context(context)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/context.py", line 108, in build_context
+    update_controller_context(context, context.controller)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/context.py", line 65, in update_controller_context
+    frappe.errprint(frappe.utils.get_traceback())
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/__init__.py", line 329, in errprint
+    print(msg)
+BrokenPipeError: [Errno 32] Broken pipe
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/context.py", line 56, in update_controller_context
+    ret = module.get_context(context)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/www/error.py", line 11, in get_context
+    print(frappe.get_traceback().encode("utf-8"))
+BrokenPipeError: [Errno 32] Broken pipe
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/app.py", line 77, in application
+    response = frappe.website.render.render()
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/render.py", line 79, in render
+    data = render_page(path)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/render.py", line 194, in render_page
+    return build(path)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/render.py", line 201, in build
+    return build_page(path)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/render.py", line 216, in build_page
+    context = get_context(path)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/context.py", line 28, in get_context
+    context = build_context(context)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/context.py", line 108, in build_context
+    update_controller_context(context, context.controller)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/context.py", line 65, in update_controller_context
+    frappe.errprint(frappe.utils.get_traceback())
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/__init__.py", line 329, in errprint
+    print(msg)
+BrokenPipeError: [Errno 32] Broken pipe
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/utils/error.py", line 36, in make_error_snapshot
+    snapshot = get_snapshot(exception)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/utils/error.py", line 127, in get_snapshot
+    value = pydoc.text.repr(getattr(evalue, name))
+AttributeError: characters_written
+2022-01-16 23:15:59,816 ERROR frappe Could not take error snapshot: characters_written
+Site: sanctity.erpeaz.com
+Form Dict: {'doctype': 'Project', 'name': '.env'}
+Traceback (most recent call last):
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/render.py", line 49, in render
+    data = render_page_by_language(path)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/render.py", line 178, in render_page_by_language
+    return render_page(path)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/render.py", line 194, in render_page
+    return build(path)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/render.py", line 201, in build
+    return build_page(path)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/render.py", line 216, in build_page
+    context = get_context(path)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/context.py", line 15, in get_context
+    context = get_page_context(path)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/router.py", line 40, in get_page_context
+    page_context = make_page_context(path)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/router.py", line 50, in make_page_context
+    raise frappe.PageDoesNotExistError
+frappe.exceptions.PageDoesNotExistError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/context.py", line 56, in update_controller_context
+    ret = module.get_context(context)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/www/printview.py", line 32, in get_context
+    doc = frappe.get_doc(frappe.form_dict.doctype, frappe.form_dict.name)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/__init__.py", line 886, in get_doc
+    doc = frappe.model.document.get_doc(*args, **kwargs)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/model/document.py", line 75, in get_doc
+    return controller(*args, **kwargs)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/model/document.py", line 113, in __init__
+    self.load_from_db()
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/model/document.py", line 156, in load_from_db
+    frappe.throw(_("{0} {1} not found").format(_(self.doctype), self.name), frappe.DoesNotExistError)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/__init__.py", line 439, in throw
+    msgprint(msg, raise_exception=exc, title=title, indicator='red', is_minimizable=is_minimizable, wide=wide, as_list=as_list)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/__init__.py", line 418, in msgprint
+    _raise_exception()
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/__init__.py", line 372, in _raise_exception
+    raise raise_exception(msg)
+frappe.exceptions.DoesNotExistError: Project .env not found
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/app.py", line 77, in application
+    response = frappe.website.render.render()
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/render.py", line 67, in render
+    data = render_page(path)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/render.py", line 194, in render_page
+    return build(path)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/render.py", line 201, in build
+    return build_page(path)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/render.py", line 216, in build_page
+    context = get_context(path)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/context.py", line 28, in get_context
+    context = build_context(context)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/context.py", line 108, in build_context
+    update_controller_context(context, context.controller)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/context.py", line 65, in update_controller_context
+    frappe.errprint(frappe.utils.get_traceback())
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/__init__.py", line 329, in errprint
+    print(msg)
+BrokenPipeError: [Errno 32] Broken pipe
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/utils/error.py", line 36, in make_error_snapshot
+    snapshot = get_snapshot(exception)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/utils/error.py", line 127, in get_snapshot
+    value = pydoc.text.repr(getattr(evalue, name))
+AttributeError: characters_written
+2022-01-17 04:35:25,396 ERROR frappe New Exception collected with id: 2022-01-17 04:35:25.390533-117.194.150.59-99b
+Site: sanctity.erpeaz.com
+Form Dict: {'docname': 'Stock Ledger', 'fields': '[]', 'cmd': 'frappe.client.validate_link'}
+2022-01-17 04:45:36,118 ERROR frappe New Exception collected with id: 2022-01-17 04:45:36.115061-117.194.150.59-fed
+Site: sanctity.erpeaz.com
+Form Dict: {'docname': 'Stock Ledger', 'fields': '[]', 'cmd': 'frappe.client.validate_link'}
+2022-01-17 04:46:36,312 ERROR frappe New Exception collected with id: 2022-01-17 04:46:36.303278-117.194.150.59-644
+Site: sanctity.erpeaz.com
+Form Dict: {'docname': 'Stock Ledger', 'fields': '[]', 'cmd': 'frappe.client.validate_link'}
+2022-01-17 04:48:26,437 ERROR frappe New Exception collected with id: 2022-01-17 04:48:26.434203-117.194.150.59-df6
+Site: sanctity.erpeaz.com
+Form Dict: {'docname': 'Stock Ledger', 'fields': '[]', 'cmd': 'frappe.client.validate_link'}
+2022-01-17 04:49:00,794 ERROR frappe New Exception collected with id: 2022-01-17 04:49:00.791967-117.194.150.59-57d
+Site: sanctity.erpeaz.com
+Form Dict: {'docname': 'Stock Ledger', 'fields': '[]', 'cmd': 'frappe.client.validate_link'}
+2022-01-17 04:49:29,873 ERROR frappe New Exception collected with id: 2022-01-17 04:49:29.870200-117.194.150.59-a97
+Site: sanctity.erpeaz.com
+Form Dict: {'docname': 'Stock Ledger', 'fields': '[]', 'cmd': 'frappe.client.validate_link'}
+2022-01-17 04:49:46,548 ERROR frappe New Exception collected with id: 2022-01-17 04:49:46.545097-117.194.150.59-0e2
+Site: sanctity.erpeaz.com
+Form Dict: {'docname': 'Stock Ledger', 'fields': '[]', 'cmd': 'frappe.client.validate_link'}
+2022-01-17 04:58:03,721 ERROR frappe New Exception collected with id: 2022-01-17 04:58:03.712990-117.194.150.59-79b
+Site: sanctity.erpeaz.com
+Form Dict: {'doctype': 'Employee Onboarding', 'name': 'HR-EMP-ONB-2022-00002', 'items': '["Appointment Letter"]', 'cmd': 'frappe.desk.notifications.get_open_count'}
+2022-01-18 02:49:03,593 ERROR frappe Could not take error snapshot: characters_written
+Site: sanctity.erpeaz.com
+Form Dict: {'doctype': 'Project', 'name': '.env'}
+Traceback (most recent call last):
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/render.py", line 49, in render
+    data = render_page_by_language(path)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/render.py", line 178, in render_page_by_language
+    return render_page(path)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/render.py", line 194, in render_page
+    return build(path)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/render.py", line 201, in build
+    return build_page(path)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/render.py", line 216, in build_page
+    context = get_context(path)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/context.py", line 15, in get_context
+    context = get_page_context(path)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/router.py", line 40, in get_page_context
+    page_context = make_page_context(path)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/router.py", line 50, in make_page_context
+    raise frappe.PageDoesNotExistError
+frappe.exceptions.PageDoesNotExistError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/context.py", line 56, in update_controller_context
+    ret = module.get_context(context)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/www/printview.py", line 32, in get_context
+    doc = frappe.get_doc(frappe.form_dict.doctype, frappe.form_dict.name)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/__init__.py", line 886, in get_doc
+    doc = frappe.model.document.get_doc(*args, **kwargs)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/model/document.py", line 75, in get_doc
+    return controller(*args, **kwargs)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/model/document.py", line 113, in __init__
+    self.load_from_db()
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/model/document.py", line 156, in load_from_db
+    frappe.throw(_("{0} {1} not found").format(_(self.doctype), self.name), frappe.DoesNotExistError)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/__init__.py", line 439, in throw
+    msgprint(msg, raise_exception=exc, title=title, indicator='red', is_minimizable=is_minimizable, wide=wide, as_list=as_list)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/__init__.py", line 418, in msgprint
+    _raise_exception()
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/__init__.py", line 372, in _raise_exception
+    raise raise_exception(msg)
+frappe.exceptions.DoesNotExistError: Project .env not found
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/app.py", line 77, in application
+    response = frappe.website.render.render()
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/render.py", line 67, in render
+    data = render_page(path)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/render.py", line 194, in render_page
+    return build(path)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/render.py", line 201, in build
+    return build_page(path)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/render.py", line 216, in build_page
+    context = get_context(path)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/context.py", line 28, in get_context
+    context = build_context(context)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/context.py", line 108, in build_context
+    update_controller_context(context, context.controller)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/context.py", line 65, in update_controller_context
+    frappe.errprint(frappe.utils.get_traceback())
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/__init__.py", line 329, in errprint
+    print(msg)
+BrokenPipeError: [Errno 32] Broken pipe
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/utils/error.py", line 36, in make_error_snapshot
+    snapshot = get_snapshot(exception)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/utils/error.py", line 127, in get_snapshot
+    value = pydoc.text.repr(getattr(evalue, name))
+AttributeError: characters_written
+2022-01-18 04:33:51,690 ERROR frappe Could not take error snapshot: characters_written
+Site: sanctity.erpeaz.com
+Form Dict: {'name': 'SF-SQTN-2022-00004', 'doctype': 'Supplier Quotation', 'parents': [{'label': 'Supplier Quotation', 'route': 'supplier-quotations'}]}
+Traceback (most recent call last):
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/context.py", line 56, in update_controller_context
+    ret = module.get_context(context)
+  File "/home/erpnext/frappe-bench/apps/erpnext/erpnext/templates/pages/order.py", line 38, in get_context
+    customer_loyalty_program = frappe.db.get_value("Customer", context.doc.customer, "loyalty_program")
+AttributeError: 'SupplierQuotation' object has no attribute 'customer'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/render.py", line 49, in render
+    data = render_page_by_language(path)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/render.py", line 178, in render_page_by_language
+    return render_page(path)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/render.py", line 194, in render_page
+    return build(path)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/render.py", line 201, in build
+    return build_page(path)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/render.py", line 216, in build_page
+    context = get_context(path)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/context.py", line 28, in get_context
+    context = build_context(context)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/context.py", line 108, in build_context
+    update_controller_context(context, context.controller)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/context.py", line 65, in update_controller_context
+    frappe.errprint(frappe.utils.get_traceback())
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/__init__.py", line 329, in errprint
+    print(msg)
+BrokenPipeError: [Errno 32] Broken pipe
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/context.py", line 56, in update_controller_context
+    ret = module.get_context(context)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/www/error.py", line 11, in get_context
+    print(frappe.get_traceback().encode("utf-8"))
+BrokenPipeError: [Errno 32] Broken pipe
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/app.py", line 77, in application
+    response = frappe.website.render.render()
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/render.py", line 79, in render
+    data = render_page(path)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/render.py", line 194, in render_page
+    return build(path)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/render.py", line 201, in build
+    return build_page(path)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/render.py", line 216, in build_page
+    context = get_context(path)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/context.py", line 28, in get_context
+    context = build_context(context)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/context.py", line 108, in build_context
+    update_controller_context(context, context.controller)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/context.py", line 65, in update_controller_context
+    frappe.errprint(frappe.utils.get_traceback())
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/__init__.py", line 329, in errprint
+    print(msg)
+BrokenPipeError: [Errno 32] Broken pipe
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/utils/error.py", line 36, in make_error_snapshot
+    snapshot = get_snapshot(exception)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/utils/error.py", line 127, in get_snapshot
+    value = pydoc.text.repr(getattr(evalue, name))
+AttributeError: characters_written
+2022-01-18 04:40:07,094 ERROR frappe Could not take error snapshot: characters_written
+Site: sanctity.erpeaz.com
+Form Dict: {'name': 'SF-SQTN-2022-00004', 'doctype': 'Supplier Quotation', 'parents': [{'label': 'Supplier Quotation', 'route': 'supplier-quotations'}]}
+Traceback (most recent call last):
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/context.py", line 56, in update_controller_context
+    ret = module.get_context(context)
+  File "/home/erpnext/frappe-bench/apps/erpnext/erpnext/templates/pages/order.py", line 38, in get_context
+    customer_loyalty_program = frappe.db.get_value("Customer", context.doc.customer, "loyalty_program")
+AttributeError: 'SupplierQuotation' object has no attribute 'customer'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/render.py", line 49, in render
+    data = render_page_by_language(path)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/render.py", line 178, in render_page_by_language
+    return render_page(path)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/render.py", line 194, in render_page
+    return build(path)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/render.py", line 201, in build
+    return build_page(path)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/render.py", line 216, in build_page
+    context = get_context(path)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/context.py", line 28, in get_context
+    context = build_context(context)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/context.py", line 108, in build_context
+    update_controller_context(context, context.controller)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/context.py", line 65, in update_controller_context
+    frappe.errprint(frappe.utils.get_traceback())
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/__init__.py", line 329, in errprint
+    print(msg)
+BrokenPipeError: [Errno 32] Broken pipe
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/context.py", line 56, in update_controller_context
+    ret = module.get_context(context)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/www/error.py", line 11, in get_context
+    print(frappe.get_traceback().encode("utf-8"))
+BrokenPipeError: [Errno 32] Broken pipe
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/app.py", line 77, in application
+    response = frappe.website.render.render()
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/render.py", line 79, in render
+    data = render_page(path)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/render.py", line 194, in render_page
+    return build(path)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/render.py", line 201, in build
+    return build_page(path)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/render.py", line 216, in build_page
+    context = get_context(path)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/context.py", line 28, in get_context
+    context = build_context(context)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/context.py", line 108, in build_context
+    update_controller_context(context, context.controller)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/context.py", line 65, in update_controller_context
+    frappe.errprint(frappe.utils.get_traceback())
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/__init__.py", line 329, in errprint
+    print(msg)
+BrokenPipeError: [Errno 32] Broken pipe
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/utils/error.py", line 36, in make_error_snapshot
+    snapshot = get_snapshot(exception)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/utils/error.py", line 127, in get_snapshot
+    value = pydoc.text.repr(getattr(evalue, name))
+AttributeError: characters_written
+2022-01-18 04:41:58,667 ERROR frappe Could not take error snapshot: characters_written
+Site: sanctity.erpeaz.com
+Form Dict: {'name': 'SF-SQTN-2022-00004', 'doctype': 'Supplier Quotation', 'parents': [{'label': 'Supplier Quotation', 'route': 'supplier-quotations'}]}
+Traceback (most recent call last):
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/context.py", line 56, in update_controller_context
+    ret = module.get_context(context)
+  File "/home/erpnext/frappe-bench/apps/erpnext/erpnext/templates/pages/order.py", line 38, in get_context
+    customer_loyalty_program = frappe.db.get_value("Customer", context.doc.customer, "loyalty_program")
+AttributeError: 'SupplierQuotation' object has no attribute 'customer'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/render.py", line 49, in render
+    data = render_page_by_language(path)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/render.py", line 178, in render_page_by_language
+    return render_page(path)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/render.py", line 194, in render_page
+    return build(path)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/render.py", line 201, in build
+    return build_page(path)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/render.py", line 216, in build_page
+    context = get_context(path)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/context.py", line 28, in get_context
+    context = build_context(context)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/context.py", line 108, in build_context
+    update_controller_context(context, context.controller)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/context.py", line 65, in update_controller_context
+    frappe.errprint(frappe.utils.get_traceback())
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/__init__.py", line 329, in errprint
+    print(msg)
+BrokenPipeError: [Errno 32] Broken pipe
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/context.py", line 56, in update_controller_context
+    ret = module.get_context(context)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/www/error.py", line 11, in get_context
+    print(frappe.get_traceback().encode("utf-8"))
+BrokenPipeError: [Errno 32] Broken pipe
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/app.py", line 77, in application
+    response = frappe.website.render.render()
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/render.py", line 79, in render
+    data = render_page(path)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/render.py", line 194, in render_page
+    return build(path)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/render.py", line 201, in build
+    return build_page(path)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/render.py", line 216, in build_page
+    context = get_context(path)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/context.py", line 28, in get_context
+    context = build_context(context)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/context.py", line 108, in build_context
+    update_controller_context(context, context.controller)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/context.py", line 65, in update_controller_context
+    frappe.errprint(frappe.utils.get_traceback())
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/__init__.py", line 329, in errprint
+    print(msg)
+BrokenPipeError: [Errno 32] Broken pipe
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/utils/error.py", line 36, in make_error_snapshot
+    snapshot = get_snapshot(exception)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/utils/error.py", line 127, in get_snapshot
+    value = pydoc.text.repr(getattr(evalue, name))
+AttributeError: characters_written
+2022-01-18 04:59:29,801 ERROR frappe Could not take error snapshot: characters_written
+Site: sanctity.erpeaz.com
+Form Dict: {'name': 'SF-SQTN-2022-00004', 'doctype': 'Supplier Quotation', 'parents': [{'label': 'Supplier Quotation', 'route': 'supplier-quotations'}]}
+Traceback (most recent call last):
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/context.py", line 56, in update_controller_context
+    ret = module.get_context(context)
+  File "/home/erpnext/frappe-bench/apps/erpnext/erpnext/templates/pages/order.py", line 38, in get_context
+    customer_loyalty_program = frappe.db.get_value("Customer", context.doc.customer, "loyalty_program")
+AttributeError: 'SupplierQuotation' object has no attribute 'customer'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/render.py", line 49, in render
+    data = render_page_by_language(path)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/render.py", line 178, in render_page_by_language
+    return render_page(path)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/render.py", line 194, in render_page
+    return build(path)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/render.py", line 201, in build
+    return build_page(path)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/render.py", line 216, in build_page
+    context = get_context(path)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/context.py", line 28, in get_context
+    context = build_context(context)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/context.py", line 108, in build_context
+    update_controller_context(context, context.controller)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/context.py", line 65, in update_controller_context
+    frappe.errprint(frappe.utils.get_traceback())
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/__init__.py", line 329, in errprint
+    print(msg)
+BrokenPipeError: [Errno 32] Broken pipe
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/context.py", line 56, in update_controller_context
+    ret = module.get_context(context)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/www/error.py", line 11, in get_context
+    print(frappe.get_traceback().encode("utf-8"))
+BrokenPipeError: [Errno 32] Broken pipe
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/app.py", line 77, in application
+    response = frappe.website.render.render()
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/render.py", line 79, in render
+    data = render_page(path)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/render.py", line 194, in render_page
+    return build(path)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/render.py", line 201, in build
+    return build_page(path)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/render.py", line 216, in build_page
+    context = get_context(path)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/context.py", line 28, in get_context
+    context = build_context(context)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/context.py", line 108, in build_context
+    update_controller_context(context, context.controller)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/context.py", line 65, in update_controller_context
+    frappe.errprint(frappe.utils.get_traceback())
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/__init__.py", line 329, in errprint
+    print(msg)
+BrokenPipeError: [Errno 32] Broken pipe
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/utils/error.py", line 36, in make_error_snapshot
+    snapshot = get_snapshot(exception)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/utils/error.py", line 127, in get_snapshot
+    value = pydoc.text.repr(getattr(evalue, name))
+AttributeError: characters_written

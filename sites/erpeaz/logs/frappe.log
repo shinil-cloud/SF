@@ -1,0 +1,3 @@
+2022-01-15 04:42:12,106 ERROR frappe New Exception collected with id: 2022-01-15 04:42:11.920553-61.3.119.164-ada
+Site: erpeaz
+Form Dict: {'doctype': 'Employee', 'filters': '{"applicant":"Athulya - athulya.athu@gmail.com - bde-vaccancy"}', 'cmd': 'frappe.client.get'}

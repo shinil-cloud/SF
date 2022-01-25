@@ -1,0 +1,1099 @@
+2022-01-18 05:13:20,153 ERROR frappe Could not take error snapshot: characters_written
+Site: sanctity.erpeaz.com
+Form Dict: {'name': 'SF-SQTN-2022-00004', 'doctype': 'Supplier Quotation', 'parents': [{'label': 'Supplier Quotation', 'route': 'supplier-quotations'}]}
+Traceback (most recent call last):
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/context.py", line 56, in update_controller_context
+    ret = module.get_context(context)
+  File "/home/erpnext/frappe-bench/apps/erpnext/erpnext/templates/pages/order.py", line 38, in get_context
+    customer_loyalty_program = frappe.db.get_value("Customer", context.doc.customer, "loyalty_program")
+AttributeError: 'SupplierQuotation' object has no attribute 'customer'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/render.py", line 49, in render
+    data = render_page_by_language(path)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/render.py", line 178, in render_page_by_language
+    return render_page(path)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/render.py", line 194, in render_page
+    return build(path)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/render.py", line 201, in build
+    return build_page(path)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/render.py", line 216, in build_page
+    context = get_context(path)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/context.py", line 28, in get_context
+    context = build_context(context)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/context.py", line 108, in build_context
+    update_controller_context(context, context.controller)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/context.py", line 65, in update_controller_context
+    frappe.errprint(frappe.utils.get_traceback())
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/__init__.py", line 329, in errprint
+    print(msg)
+BrokenPipeError: [Errno 32] Broken pipe
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/context.py", line 56, in update_controller_context
+    ret = module.get_context(context)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/www/error.py", line 11, in get_context
+    print(frappe.get_traceback().encode("utf-8"))
+BrokenPipeError: [Errno 32] Broken pipe
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/app.py", line 77, in application
+    response = frappe.website.render.render()
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/render.py", line 79, in render
+    data = render_page(path)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/render.py", line 194, in render_page
+    return build(path)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/render.py", line 201, in build
+    return build_page(path)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/render.py", line 216, in build_page
+    context = get_context(path)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/context.py", line 28, in get_context
+    context = build_context(context)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/context.py", line 108, in build_context
+    update_controller_context(context, context.controller)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/context.py", line 65, in update_controller_context
+    frappe.errprint(frappe.utils.get_traceback())
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/__init__.py", line 329, in errprint
+    print(msg)
+BrokenPipeError: [Errno 32] Broken pipe
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/utils/error.py", line 36, in make_error_snapshot
+    snapshot = get_snapshot(exception)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/utils/error.py", line 127, in get_snapshot
+    value = pydoc.text.repr(getattr(evalue, name))
+AttributeError: characters_written
+2022-01-18 05:30:52,530 ERROR frappe Could not take error snapshot: characters_written
+Site: sanctity.erpeaz.com
+Form Dict: {'name': 'SF-SQTN-2022-00005', 'doctype': 'Supplier Quotation', 'parents': [{'label': 'Supplier Quotation', 'route': 'supplier-quotations'}]}
+Traceback (most recent call last):
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/context.py", line 56, in update_controller_context
+    ret = module.get_context(context)
+  File "/home/erpnext/frappe-bench/apps/erpnext/erpnext/templates/pages/order.py", line 38, in get_context
+    customer_loyalty_program = frappe.db.get_value("Customer", context.doc.customer, "loyalty_program")
+AttributeError: 'SupplierQuotation' object has no attribute 'customer'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/render.py", line 49, in render
+    data = render_page_by_language(path)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/render.py", line 178, in render_page_by_language
+    return render_page(path)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/render.py", line 194, in render_page
+    return build(path)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/render.py", line 201, in build
+    return build_page(path)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/render.py", line 216, in build_page
+    context = get_context(path)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/context.py", line 28, in get_context
+    context = build_context(context)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/context.py", line 108, in build_context
+    update_controller_context(context, context.controller)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/context.py", line 65, in update_controller_context
+    frappe.errprint(frappe.utils.get_traceback())
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/__init__.py", line 329, in errprint
+    print(msg)
+BrokenPipeError: [Errno 32] Broken pipe
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/context.py", line 56, in update_controller_context
+    ret = module.get_context(context)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/www/error.py", line 11, in get_context
+    print(frappe.get_traceback().encode("utf-8"))
+BrokenPipeError: [Errno 32] Broken pipe
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/app.py", line 77, in application
+    response = frappe.website.render.render()
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/render.py", line 79, in render
+    data = render_page(path)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/render.py", line 194, in render_page
+    return build(path)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/render.py", line 201, in build
+    return build_page(path)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/render.py", line 216, in build_page
+    context = get_context(path)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/context.py", line 28, in get_context
+    context = build_context(context)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/context.py", line 108, in build_context
+    update_controller_context(context, context.controller)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/context.py", line 65, in update_controller_context
+    frappe.errprint(frappe.utils.get_traceback())
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/__init__.py", line 329, in errprint
+    print(msg)
+BrokenPipeError: [Errno 32] Broken pipe
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/utils/error.py", line 36, in make_error_snapshot
+    snapshot = get_snapshot(exception)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/utils/error.py", line 127, in get_snapshot
+    value = pydoc.text.repr(getattr(evalue, name))
+AttributeError: characters_written
+2022-01-18 07:13:44,849 ERROR frappe Could not take error snapshot: characters_written
+Site: sanctity.erpeaz.com
+Form Dict: {'name': 'SF-SQTN-2022-00007', 'doctype': 'Supplier Quotation', 'parents': [{'label': 'Supplier Quotation', 'route': 'supplier-quotations'}]}
+Traceback (most recent call last):
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/context.py", line 56, in update_controller_context
+    ret = module.get_context(context)
+  File "/home/erpnext/frappe-bench/apps/erpnext/erpnext/templates/pages/order.py", line 38, in get_context
+    customer_loyalty_program = frappe.db.get_value("Customer", context.doc.customer, "loyalty_program")
+AttributeError: 'SupplierQuotation' object has no attribute 'customer'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/render.py", line 49, in render
+    data = render_page_by_language(path)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/render.py", line 178, in render_page_by_language
+    return render_page(path)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/render.py", line 194, in render_page
+    return build(path)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/render.py", line 201, in build
+    return build_page(path)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/render.py", line 216, in build_page
+    context = get_context(path)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/context.py", line 28, in get_context
+    context = build_context(context)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/context.py", line 108, in build_context
+    update_controller_context(context, context.controller)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/context.py", line 65, in update_controller_context
+    frappe.errprint(frappe.utils.get_traceback())
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/__init__.py", line 329, in errprint
+    print(msg)
+BrokenPipeError: [Errno 32] Broken pipe
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/context.py", line 56, in update_controller_context
+    ret = module.get_context(context)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/www/error.py", line 11, in get_context
+    print(frappe.get_traceback().encode("utf-8"))
+BrokenPipeError: [Errno 32] Broken pipe
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/app.py", line 77, in application
+    response = frappe.website.render.render()
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/render.py", line 79, in render
+    data = render_page(path)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/render.py", line 194, in render_page
+    return build(path)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/render.py", line 201, in build
+    return build_page(path)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/render.py", line 216, in build_page
+    context = get_context(path)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/context.py", line 28, in get_context
+    context = build_context(context)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/context.py", line 108, in build_context
+    update_controller_context(context, context.controller)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/context.py", line 65, in update_controller_context
+    frappe.errprint(frappe.utils.get_traceback())
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/__init__.py", line 329, in errprint
+    print(msg)
+BrokenPipeError: [Errno 32] Broken pipe
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/utils/error.py", line 36, in make_error_snapshot
+    snapshot = get_snapshot(exception)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/utils/error.py", line 127, in get_snapshot
+    value = pydoc.text.repr(getattr(evalue, name))
+AttributeError: characters_written
+2022-01-18 10:03:38,592 ERROR frappe New Exception collected with id: 2022-01-18 10:03:38.586475-117.198.203.127-e2d
+Site: sanctity.erpeaz.com
+Form Dict: {'doctype': 'Interview ', 'filters': '{"job_applicant":"Aparna - aparnaappu@gmail.com - hiring-accountant"}', 'cmd': 'frappe.client.get'}
+2022-01-18 10:04:09,688 ERROR frappe New Exception collected with id: 2022-01-18 10:04:09.682540-117.198.203.127-172
+Site: sanctity.erpeaz.com
+Form Dict: {'doctype': 'Interview ', 'filters': '{}', 'cmd': 'frappe.client.get'}
+2022-01-18 10:04:14,971 ERROR frappe New Exception collected with id: 2022-01-18 10:04:14.965804-117.198.203.127-5af
+Site: sanctity.erpeaz.com
+Form Dict: {'doctype': 'Interview ', 'filters': '{"job_applicant":"Aparna - aparnaappu@gmail.com - hiring-accountant"}', 'cmd': 'frappe.client.get'}
+2022-01-18 10:05:03,774 ERROR frappe New Exception collected with id: 2022-01-18 10:05:03.768904-117.198.203.127-c67
+Site: sanctity.erpeaz.com
+Form Dict: {'doctype': 'Interview ', 'filters': '{"email_id":"Aparna - aparnaappu@gmail.com - hiring-accountant"}', 'cmd': 'frappe.client.get'}
+2022-01-18 10:05:33,100 ERROR frappe New Exception collected with id: 2022-01-18 10:05:33.093983-117.198.203.127-79d
+Site: sanctity.erpeaz.com
+Form Dict: {'doctype': 'Interview ', 'filters': '{"job_applicant":"Aparna - aparnaappu@gmail.com - hiring-accountant"}', 'cmd': 'frappe.client.get'}
+2022-01-18 10:07:33,283 ERROR frappe New Exception collected with id: 2022-01-18 10:07:33.278048-117.198.203.127-f72
+Site: sanctity.erpeaz.com
+Form Dict: {'doctype': 'Interview ', 'filters': '{"job_applicant":"Aparna - aparnaappu@gmail.com - hiring-accountant"}', 'cmd': 'frappe.client.get'}
+2022-01-18 10:11:21,969 ERROR frappe New Exception collected with id: 2022-01-18 10:11:21.963266-117.198.203.127-c88
+Site: sanctity.erpeaz.com
+Form Dict: {'doctype': 'Interview ', 'filters': '{}', 'cmd': 'frappe.client.get'}
+2022-01-18 10:11:27,465 ERROR frappe New Exception collected with id: 2022-01-18 10:11:27.460076-117.198.203.127-b6f
+Site: sanctity.erpeaz.com
+Form Dict: {'doctype': 'Interview ', 'filters': '{"job_applicant":"Aparna - aparnaappu@gmail.com - hiring-accountant"}', 'cmd': 'frappe.client.get'}
+2022-01-18 11:10:23,256 ERROR frappe New Exception collected with id: 2022-01-18 11:10:23.253654-117.198.203.127-d86
+Site: sanctity.erpeaz.com
+Form Dict: {'docname': 'stock-balance', 'fields': '[]', 'cmd': 'frappe.client.validate_link'}
+2022-01-18 11:28:23,131 ERROR frappe Could not take error snapshot: characters_written
+Site: sanctity.erpeaz.com
+Form Dict: {'name': 'SF-SQTN-2022-00008', 'doctype': 'Supplier Quotation', 'parents': [{'label': 'Supplier Quotation', 'route': 'supplier-quotations'}]}
+Traceback (most recent call last):
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/context.py", line 56, in update_controller_context
+    ret = module.get_context(context)
+  File "/home/erpnext/frappe-bench/apps/erpnext/erpnext/templates/pages/order.py", line 38, in get_context
+    customer_loyalty_program = frappe.db.get_value("Customer", context.doc.customer, "loyalty_program")
+AttributeError: 'SupplierQuotation' object has no attribute 'customer'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/render.py", line 49, in render
+    data = render_page_by_language(path)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/render.py", line 178, in render_page_by_language
+    return render_page(path)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/render.py", line 194, in render_page
+    return build(path)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/render.py", line 201, in build
+    return build_page(path)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/render.py", line 216, in build_page
+    context = get_context(path)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/context.py", line 28, in get_context
+    context = build_context(context)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/context.py", line 108, in build_context
+    update_controller_context(context, context.controller)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/context.py", line 65, in update_controller_context
+    frappe.errprint(frappe.utils.get_traceback())
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/__init__.py", line 329, in errprint
+    print(msg)
+BrokenPipeError: [Errno 32] Broken pipe
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/context.py", line 56, in update_controller_context
+    ret = module.get_context(context)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/www/error.py", line 11, in get_context
+    print(frappe.get_traceback().encode("utf-8"))
+BrokenPipeError: [Errno 32] Broken pipe
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/app.py", line 77, in application
+    response = frappe.website.render.render()
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/render.py", line 79, in render
+    data = render_page(path)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/render.py", line 194, in render_page
+    return build(path)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/render.py", line 201, in build
+    return build_page(path)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/render.py", line 216, in build_page
+    context = get_context(path)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/context.py", line 28, in get_context
+    context = build_context(context)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/context.py", line 108, in build_context
+    update_controller_context(context, context.controller)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/context.py", line 65, in update_controller_context
+    frappe.errprint(frappe.utils.get_traceback())
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/__init__.py", line 329, in errprint
+    print(msg)
+BrokenPipeError: [Errno 32] Broken pipe
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/utils/error.py", line 36, in make_error_snapshot
+    snapshot = get_snapshot(exception)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/utils/error.py", line 127, in get_snapshot
+    value = pydoc.text.repr(getattr(evalue, name))
+AttributeError: characters_written
+2022-01-19 04:45:26,494 ERROR frappe Could not take error snapshot: characters_written
+Site: sanctity.erpeaz.com
+Form Dict: {'name': 'SF-SQTN-2022-00011', 'doctype': 'Supplier Quotation', 'parents': [{'label': 'Supplier Quotation', 'route': 'supplier-quotations'}]}
+Traceback (most recent call last):
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/context.py", line 56, in update_controller_context
+    ret = module.get_context(context)
+  File "/home/erpnext/frappe-bench/apps/erpnext/erpnext/templates/pages/order.py", line 38, in get_context
+    customer_loyalty_program = frappe.db.get_value("Customer", context.doc.customer, "loyalty_program")
+AttributeError: 'SupplierQuotation' object has no attribute 'customer'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/render.py", line 49, in render
+    data = render_page_by_language(path)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/render.py", line 178, in render_page_by_language
+    return render_page(path)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/render.py", line 194, in render_page
+    return build(path)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/render.py", line 201, in build
+    return build_page(path)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/render.py", line 216, in build_page
+    context = get_context(path)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/context.py", line 28, in get_context
+    context = build_context(context)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/context.py", line 108, in build_context
+    update_controller_context(context, context.controller)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/context.py", line 65, in update_controller_context
+    frappe.errprint(frappe.utils.get_traceback())
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/__init__.py", line 329, in errprint
+    print(msg)
+BrokenPipeError: [Errno 32] Broken pipe
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/context.py", line 56, in update_controller_context
+    ret = module.get_context(context)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/www/error.py", line 11, in get_context
+    print(frappe.get_traceback().encode("utf-8"))
+BrokenPipeError: [Errno 32] Broken pipe
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/app.py", line 77, in application
+    response = frappe.website.render.render()
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/render.py", line 79, in render
+    data = render_page(path)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/render.py", line 194, in render_page
+    return build(path)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/render.py", line 201, in build
+    return build_page(path)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/render.py", line 216, in build_page
+    context = get_context(path)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/context.py", line 28, in get_context
+    context = build_context(context)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/context.py", line 108, in build_context
+    update_controller_context(context, context.controller)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/context.py", line 65, in update_controller_context
+    frappe.errprint(frappe.utils.get_traceback())
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/__init__.py", line 329, in errprint
+    print(msg)
+BrokenPipeError: [Errno 32] Broken pipe
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/utils/error.py", line 36, in make_error_snapshot
+    snapshot = get_snapshot(exception)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/utils/error.py", line 127, in get_snapshot
+    value = pydoc.text.repr(getattr(evalue, name))
+AttributeError: characters_written
+2022-01-19 16:43:45,436 ERROR frappe Could not take error snapshot: characters_written
+Site: sanctity.erpeaz.com
+Form Dict: {'lang': 'en', 'doctype': 'Program', 'name': 'index.php'}
+Traceback (most recent call last):
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/render.py", line 49, in render
+    data = render_page_by_language(path)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/render.py", line 178, in render_page_by_language
+    return render_page(path)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/render.py", line 194, in render_page
+    return build(path)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/render.py", line 201, in build
+    return build_page(path)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/render.py", line 216, in build_page
+    context = get_context(path)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/context.py", line 15, in get_context
+    context = get_page_context(path)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/router.py", line 40, in get_page_context
+    page_context = make_page_context(path)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/router.py", line 50, in make_page_context
+    raise frappe.PageDoesNotExistError
+frappe.exceptions.PageDoesNotExistError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/context.py", line 56, in update_controller_context
+    ret = module.get_context(context)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/www/printview.py", line 32, in get_context
+    doc = frappe.get_doc(frappe.form_dict.doctype, frappe.form_dict.name)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/__init__.py", line 886, in get_doc
+    doc = frappe.model.document.get_doc(*args, **kwargs)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/model/document.py", line 75, in get_doc
+    return controller(*args, **kwargs)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/model/document.py", line 113, in __init__
+    self.load_from_db()
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/model/document.py", line 156, in load_from_db
+    frappe.throw(_("{0} {1} not found").format(_(self.doctype), self.name), frappe.DoesNotExistError)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/__init__.py", line 439, in throw
+    msgprint(msg, raise_exception=exc, title=title, indicator='red', is_minimizable=is_minimizable, wide=wide, as_list=as_list)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/__init__.py", line 418, in msgprint
+    _raise_exception()
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/__init__.py", line 372, in _raise_exception
+    raise raise_exception(msg)
+frappe.exceptions.DoesNotExistError: Program index.php not found
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/app.py", line 77, in application
+    response = frappe.website.render.render()
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/render.py", line 67, in render
+    data = render_page(path)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/render.py", line 194, in render_page
+    return build(path)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/render.py", line 201, in build
+    return build_page(path)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/render.py", line 216, in build_page
+    context = get_context(path)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/context.py", line 28, in get_context
+    context = build_context(context)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/context.py", line 108, in build_context
+    update_controller_context(context, context.controller)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/context.py", line 65, in update_controller_context
+    frappe.errprint(frappe.utils.get_traceback())
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/__init__.py", line 329, in errprint
+    print(msg)
+BrokenPipeError: [Errno 32] Broken pipe
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/utils/error.py", line 36, in make_error_snapshot
+    snapshot = get_snapshot(exception)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/utils/error.py", line 127, in get_snapshot
+    value = pydoc.text.repr(getattr(evalue, name))
+AttributeError: characters_written
+2022-01-19 16:43:46,556 ERROR frappe Could not take error snapshot: characters_written
+Site: sanctity.erpeaz.com
+Form Dict: {'lang': 'en', 'doctype': 'Program', 'name': 'index.php'}
+Traceback (most recent call last):
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/render.py", line 49, in render
+    data = render_page_by_language(path)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/render.py", line 178, in render_page_by_language
+    return render_page(path)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/render.py", line 194, in render_page
+    return build(path)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/render.py", line 201, in build
+    return build_page(path)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/render.py", line 216, in build_page
+    context = get_context(path)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/context.py", line 15, in get_context
+    context = get_page_context(path)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/router.py", line 40, in get_page_context
+    page_context = make_page_context(path)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/router.py", line 50, in make_page_context
+    raise frappe.PageDoesNotExistError
+frappe.exceptions.PageDoesNotExistError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/context.py", line 56, in update_controller_context
+    ret = module.get_context(context)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/www/printview.py", line 32, in get_context
+    doc = frappe.get_doc(frappe.form_dict.doctype, frappe.form_dict.name)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/__init__.py", line 886, in get_doc
+    doc = frappe.model.document.get_doc(*args, **kwargs)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/model/document.py", line 75, in get_doc
+    return controller(*args, **kwargs)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/model/document.py", line 113, in __init__
+    self.load_from_db()
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/model/document.py", line 156, in load_from_db
+    frappe.throw(_("{0} {1} not found").format(_(self.doctype), self.name), frappe.DoesNotExistError)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/__init__.py", line 439, in throw
+    msgprint(msg, raise_exception=exc, title=title, indicator='red', is_minimizable=is_minimizable, wide=wide, as_list=as_list)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/__init__.py", line 418, in msgprint
+    _raise_exception()
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/__init__.py", line 372, in _raise_exception
+    raise raise_exception(msg)
+frappe.exceptions.DoesNotExistError: Program index.php not found
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/app.py", line 77, in application
+    response = frappe.website.render.render()
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/render.py", line 67, in render
+    data = render_page(path)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/render.py", line 194, in render_page
+    return build(path)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/render.py", line 201, in build
+    return build_page(path)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/render.py", line 216, in build_page
+    context = get_context(path)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/context.py", line 28, in get_context
+    context = build_context(context)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/context.py", line 108, in build_context
+    update_controller_context(context, context.controller)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/context.py", line 65, in update_controller_context
+    frappe.errprint(frappe.utils.get_traceback())
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/__init__.py", line 329, in errprint
+    print(msg)
+BrokenPipeError: [Errno 32] Broken pipe
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/utils/error.py", line 36, in make_error_snapshot
+    snapshot = get_snapshot(exception)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/utils/error.py", line 127, in get_snapshot
+    value = pydoc.text.repr(getattr(evalue, name))
+AttributeError: characters_written
+2022-01-19 16:44:01,640 ERROR frappe Could not take error snapshot: characters_written
+Site: sanctity.erpeaz.com
+Form Dict: {'lang': 'en', 'doctype': 'Program', 'name': 'index.php'}
+Traceback (most recent call last):
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/render.py", line 49, in render
+    data = render_page_by_language(path)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/render.py", line 178, in render_page_by_language
+    return render_page(path)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/render.py", line 194, in render_page
+    return build(path)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/render.py", line 201, in build
+    return build_page(path)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/render.py", line 216, in build_page
+    context = get_context(path)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/context.py", line 15, in get_context
+    context = get_page_context(path)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/router.py", line 40, in get_page_context
+    page_context = make_page_context(path)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/router.py", line 50, in make_page_context
+    raise frappe.PageDoesNotExistError
+frappe.exceptions.PageDoesNotExistError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/context.py", line 56, in update_controller_context
+    ret = module.get_context(context)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/www/printview.py", line 32, in get_context
+    doc = frappe.get_doc(frappe.form_dict.doctype, frappe.form_dict.name)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/__init__.py", line 886, in get_doc
+    doc = frappe.model.document.get_doc(*args, **kwargs)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/model/document.py", line 75, in get_doc
+    return controller(*args, **kwargs)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/model/document.py", line 113, in __init__
+    self.load_from_db()
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/model/document.py", line 156, in load_from_db
+    frappe.throw(_("{0} {1} not found").format(_(self.doctype), self.name), frappe.DoesNotExistError)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/__init__.py", line 439, in throw
+    msgprint(msg, raise_exception=exc, title=title, indicator='red', is_minimizable=is_minimizable, wide=wide, as_list=as_list)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/__init__.py", line 418, in msgprint
+    _raise_exception()
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/__init__.py", line 372, in _raise_exception
+    raise raise_exception(msg)
+frappe.exceptions.DoesNotExistError: Program index.php not found
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/app.py", line 77, in application
+    response = frappe.website.render.render()
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/render.py", line 67, in render
+    data = render_page(path)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/render.py", line 194, in render_page
+    return build(path)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/render.py", line 201, in build
+    return build_page(path)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/render.py", line 216, in build_page
+    context = get_context(path)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/context.py", line 28, in get_context
+    context = build_context(context)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/context.py", line 108, in build_context
+    update_controller_context(context, context.controller)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/context.py", line 65, in update_controller_context
+    frappe.errprint(frappe.utils.get_traceback())
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/__init__.py", line 329, in errprint
+    print(msg)
+BrokenPipeError: [Errno 32] Broken pipe
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/utils/error.py", line 36, in make_error_snapshot
+    snapshot = get_snapshot(exception)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/utils/error.py", line 127, in get_snapshot
+    value = pydoc.text.repr(getattr(evalue, name))
+AttributeError: characters_written
+2022-01-22 04:16:01,959 ERROR frappe New Exception collected with id: 2022-01-22 04:16:01.954690-61.3.212.251-10c
+Site: sanctity.erpeaz.com
+Form Dict: {'data': '{"job_title":"engineer","applicant_name":"Manav","email_id":"manavmanu@gmail.com","phone_number":7845561232,"state":"Karnataka\\t","cover_letter":"Hello Sir/Madam,\\n\\nPlease find this attached cover letter as my application for the \\"Software Developer\\" position within your company. For further details attach my resume here.\\nI\'m looking forward to your positive responses.\\n\\nThank You","resume_attachment":"/files/images (3).jpeg","lower_range":"200000","condition":"No","country":"India","currency":"INR","doctype":"Job Applicant","web_form_name":"apply-online"}', 'web_form': 'apply-online', 'for_payment': 'false', 'cmd': 'frappe.website.doctype.web_form.web_form.accept'}
+2022-01-22 04:16:04,092 ERROR frappe New Exception collected with id: 2022-01-22 04:16:04.088318-61.3.212.251-73b
+Site: sanctity.erpeaz.com
+Form Dict: {'data': '{"job_title":"engineer","applicant_name":"Manav","email_id":"manavmanu@gmail.com","phone_number":7845561232,"state":"Karnataka\\t","cover_letter":"Hello Sir/Madam,\\n\\nPlease find this attached cover letter as my application for the \\"Software Developer\\" position within your company. For further details attach my resume here.\\nI\'m looking forward to your positive responses.\\n\\nThank You","resume_attachment":"/files/images (3).jpeg","lower_range":"200000","condition":"No","country":"India","currency":"INR","doctype":"Job Applicant","web_form_name":"apply-online"}', 'web_form': 'apply-online', 'for_payment': 'false', 'cmd': 'frappe.website.doctype.web_form.web_form.accept'}
+2022-01-22 04:16:06,562 ERROR frappe New Exception collected with id: 2022-01-22 04:16:06.557782-61.3.212.251-0f5
+Site: sanctity.erpeaz.com
+Form Dict: {'data': '{"job_title":"engineer","applicant_name":"Manav","email_id":"manavmanu@gmail.com","phone_number":7845561232,"state":"Karnataka\\t","cover_letter":"Hello Sir/Madam,\\n\\nPlease find this attached cover letter as my application for the \\"Software Developer\\" position within your company. For further details attach my resume here.\\nI\'m looking forward to your positive responses.\\n\\nThank You","resume_attachment":"/files/images (3).jpeg","lower_range":"200000","condition":"No","country":"India","currency":"INR","doctype":"Job Applicant","web_form_name":"apply-online"}', 'web_form': 'apply-online', 'for_payment': 'false', 'cmd': 'frappe.website.doctype.web_form.web_form.accept'}
+2022-01-22 04:16:09,431 ERROR frappe New Exception collected with id: 2022-01-22 04:16:09.427210-61.3.212.251-fc4
+Site: sanctity.erpeaz.com
+Form Dict: {'data': '{"job_title":"engineer","applicant_name":"Manav","email_id":"manavmanu@gmail.com","phone_number":7845561232,"state":"Karnataka\\t","cover_letter":"Hello Sir/Madam,\\n\\nPlease find this attached cover letter as my application for the \\"Software Developer\\" position within your company. For further details attach my resume here.\\nI\'m looking forward to your positive responses.\\n\\nThank You","resume_attachment":"/files/images (3).jpeg","lower_range":"200000","condition":"No","country":"India","currency":"INR","doctype":"Job Applicant","web_form_name":"apply-online"}', 'web_form': 'apply-online', 'for_payment': 'false', 'cmd': 'frappe.website.doctype.web_form.web_form.accept'}
+2022-01-22 04:16:12,211 ERROR frappe New Exception collected with id: 2022-01-22 04:16:12.207171-61.3.212.251-4d9
+Site: sanctity.erpeaz.com
+Form Dict: {'data': '{"job_title":"engineer","applicant_name":"Manav","email_id":"manavmanu@gmail.com","phone_number":7845561232,"state":"Karnataka\\t","cover_letter":"Hello Sir/Madam,\\n\\nPlease find this attached cover letter as my application for the \\"Software Developer\\" position within your company. For further details attach my resume here.\\nI\'m looking forward to your positive responses.\\n\\nThank You","resume_attachment":"/files/images (3).jpeg","lower_range":"200000","condition":"No","country":"India","currency":"INR","doctype":"Job Applicant","web_form_name":"apply-online"}', 'web_form': 'apply-online', 'for_payment': 'false', 'cmd': 'frappe.website.doctype.web_form.web_form.accept'}
+2022-01-22 04:22:17,093 ERROR frappe New Exception collected with id: 2022-01-22 04:22:17.089488-61.3.212.251-625
+Site: sanctity.erpeaz.com
+Form Dict: {'data': '{"job_title":"engineer","applicant_name":"Manav","email_id":"manumanav@gmail.com","phone_number":784512444,"state":"Karnataka\\t","cover_letter":"Please find my resume for more details","resume_attachment":"/files/download.jpeg","lower_range":200000,"condition":"No","country":"India","currency":"INR","doctype":"Job Applicant","web_form_name":"apply-online"}', 'web_form': 'apply-online', 'for_payment': 'false', 'cmd': 'frappe.website.doctype.web_form.web_form.accept'}
+2022-01-22 04:22:21,116 ERROR frappe New Exception collected with id: 2022-01-22 04:22:21.108526-61.3.212.251-6b8
+Site: sanctity.erpeaz.com
+Form Dict: {'data': '{"job_title":"engineer","applicant_name":"Manav","email_id":"manumanav@gmail.com","phone_number":784512444,"state":"Karnataka\\t","cover_letter":"Please find my resume for more details","resume_attachment":"/files/download.jpeg","lower_range":200000,"condition":"No","country":"India","currency":"INR","doctype":"Job Applicant","web_form_name":"apply-online"}', 'web_form': 'apply-online', 'for_payment': 'false', 'cmd': 'frappe.website.doctype.web_form.web_form.accept'}
+2022-01-22 04:22:32,524 ERROR frappe New Exception collected with id: 2022-01-22 04:22:32.520820-61.3.212.251-f12
+Site: sanctity.erpeaz.com
+Form Dict: {'data': '{"job_title":"engineer","applicant_name":"Manav","email_id":"manumanav@gmail.com","phone_number":784512444,"state":"Karnataka\\t","cover_letter":"Please find my resume for more details","resume_attachment":"/files/download.jpeg","lower_range":200000,"condition":"No","country":"India","currency":"INR","doctype":"Job Applicant","web_form_name":"apply-online"}', 'web_form': 'apply-online', 'for_payment': 'false', 'cmd': 'frappe.website.doctype.web_form.web_form.accept'}
+2022-01-22 04:22:59,334 ERROR frappe New Exception collected with id: 2022-01-22 04:22:59.329990-61.3.212.251-df6
+Site: sanctity.erpeaz.com
+Form Dict: {'data': '{"job_title":"engineer","applicant_name":"Manav","email_id":"manumanav@gmail.com","phone_number":784512444,"state":"Karnataka\\t","cover_letter":"Please find my resume for more details","resume_attachment":"/files/download.jpeg","lower_range":200000,"condition":"No","country":"India","currency":"INR","doctype":"Job Applicant","web_form_name":"apply-online"}', 'web_form': 'apply-online', 'for_payment': 'false', 'cmd': 'frappe.website.doctype.web_form.web_form.accept'}
+2022-01-22 04:23:02,089 ERROR frappe New Exception collected with id: 2022-01-22 04:23:02.085487-61.3.212.251-296
+Site: sanctity.erpeaz.com
+Form Dict: {'data': '{"job_title":"engineer","applicant_name":"Manav","email_id":"manumanav@gmail.com","phone_number":784512444,"state":"Karnataka\\t","cover_letter":"Please find my resume for more details","resume_attachment":"/files/download.jpeg","lower_range":200000,"condition":"No","country":"India","currency":"INR","doctype":"Job Applicant","web_form_name":"apply-online"}', 'web_form': 'apply-online', 'for_payment': 'false', 'cmd': 'frappe.website.doctype.web_form.web_form.accept'}
+2022-01-22 04:23:30,034 ERROR frappe New Exception collected with id: 2022-01-22 04:23:30.030390-61.3.212.251-aab
+Site: sanctity.erpeaz.com
+Form Dict: {'data': '{"job_title":"engineer","applicant_name":"Manav","email_id":"manumanav@gmail.com","phone_number":784512444,"state":"Karnataka\\t","cover_letter":"Please find my resume for more details","resume_attachment":"/files/download.jpeg","lower_range":200000,"condition":"No","country":"India","currency":"INR","doctype":"Job Applicant","web_form_name":"apply-online"}', 'web_form': 'apply-online', 'for_payment': 'false', 'cmd': 'frappe.website.doctype.web_form.web_form.accept'}
+2022-01-22 04:23:41,163 ERROR frappe New Exception collected with id: 2022-01-22 04:23:41.159409-61.3.212.251-d20
+Site: sanctity.erpeaz.com
+Form Dict: {'data': '{"job_title":"engineer","applicant_name":"Manav","email_id":"manumanav@gmail.com","phone_number":784512444,"state":"Karnataka\\t","cover_letter":"Please find my resume for more details","resume_attachment":"/files/download.jpeg","lower_range":200000,"condition":"No","country":"India","currency":"INR","doctype":"Job Applicant","web_form_name":"apply-online"}', 'web_form': 'apply-online', 'for_payment': 'false', 'cmd': 'frappe.website.doctype.web_form.web_form.accept'}
+2022-01-22 04:23:41,993 ERROR frappe New Exception collected with id: 2022-01-22 04:23:41.989314-61.3.212.251-758
+Site: sanctity.erpeaz.com
+Form Dict: {'data': '{"job_title":"engineer","applicant_name":"Manav","email_id":"manumanav@gmail.com","phone_number":784512444,"state":"Karnataka\\t","cover_letter":"Please find my resume for more details","resume_attachment":"/files/download.jpeg","lower_range":200000,"condition":"No","country":"India","currency":"INR","doctype":"Job Applicant","web_form_name":"apply-online"}', 'web_form': 'apply-online', 'for_payment': 'false', 'cmd': 'frappe.website.doctype.web_form.web_form.accept'}
+2022-01-22 04:23:42,419 ERROR frappe New Exception collected with id: 2022-01-22 04:23:42.415202-61.3.212.251-add
+Site: sanctity.erpeaz.com
+Form Dict: {'data': '{"job_title":"engineer","applicant_name":"Manav","email_id":"manumanav@gmail.com","phone_number":784512444,"state":"Karnataka\\t","cover_letter":"Please find my resume for more details","resume_attachment":"/files/download.jpeg","lower_range":200000,"condition":"No","country":"India","currency":"INR","doctype":"Job Applicant","web_form_name":"apply-online"}', 'web_form': 'apply-online', 'for_payment': 'false', 'cmd': 'frappe.website.doctype.web_form.web_form.accept'}
+2022-01-22 04:23:42,925 ERROR frappe New Exception collected with id: 2022-01-22 04:23:42.921514-61.3.212.251-455
+Site: sanctity.erpeaz.com
+Form Dict: {'data': '{"job_title":"engineer","applicant_name":"Manav","email_id":"manumanav@gmail.com","phone_number":784512444,"state":"Karnataka\\t","cover_letter":"Please find my resume for more details","resume_attachment":"/files/download.jpeg","lower_range":200000,"condition":"No","country":"India","currency":"INR","doctype":"Job Applicant","web_form_name":"apply-online"}', 'web_form': 'apply-online', 'for_payment': 'false', 'cmd': 'frappe.website.doctype.web_form.web_form.accept'}
+2022-01-22 04:29:21,254 ERROR frappe New Exception collected with id: 2022-01-22 04:29:21.250391-61.3.212.251-9a0
+Site: sanctity.erpeaz.com
+Form Dict: {'data': '{"job_title":"engineer","applicant_name":"Manav","email_id":"manav@gmail.com","phone_number":784541236,"state":"Karnataka\\t","cover_letter":"Please find my Resume","resume_attachment":"/files/images (3).jpeg","lower_range":200000,"condition":"No","country":"India","currency":"INR","doctype":"Job Applicant","web_form_name":"apply-online"}', 'web_form': 'apply-online', 'for_payment': 'false', 'cmd': 'frappe.website.doctype.web_form.web_form.accept'}
+2022-01-22 04:33:31,860 ERROR frappe New Exception collected with id: 2022-01-22 04:33:31.856671-61.3.212.251-34e
+Site: sanctity.erpeaz.com
+Form Dict: {'data': '{"job_title":"engineer","applicant_name":"Manav","email_id":"manav@gmail.com","phone_number":784541236,"state":"Karnataka\\t","cover_letter":"Please find my Resume","resume_attachment":"/files/images (3).jpeg","lower_range":200000,"condition":"No","country":"India","currency":"INR","doctype":"Job Applicant","web_form_name":"apply-online"}', 'web_form': 'apply-online', 'for_payment': 'false', 'cmd': 'frappe.website.doctype.web_form.web_form.accept'}
+2022-01-22 04:43:30,158 ERROR frappe New Exception collected with id: 2022-01-22 04:43:30.154078-61.3.212.251-052
+Site: sanctity.erpeaz.com
+Form Dict: {'data': '{"job_title":"engineer","applicant_name":"Manav","email_id":"manav@gmail.com","phone_number":7845125623,"state":"Karnataka\\t","cover_letter":"Please find my resume for more details","resume_attachment":"/files/images (3).jpeg","lower_range":200000,"condition":"No","country":"India","currency":"INR","doctype":"Job Applicant","web_form_name":"apply-jobs"}', 'web_form': 'apply-jobs', 'for_payment': 'false', 'cmd': 'frappe.website.doctype.web_form.web_form.accept'}
+2022-01-22 04:44:07,057 ERROR frappe New Exception collected with id: 2022-01-22 04:44:07.053648-61.3.212.251-020
+Site: sanctity.erpeaz.com
+Form Dict: {'data': '{"job_title":"engineer","applicant_name":"Manav","email_id":"manav@gmail.com","phone_number":7845125623,"state":"Karnataka\\t","cover_letter":"Please find my resume for more details","resume_attachment":"/files/images (3).jpeg","lower_range":200000,"condition":"No","country":"India","currency":"INR","doctype":"Job Applicant","web_form_name":"apply-jobs"}', 'web_form': 'apply-jobs', 'for_payment': 'false', 'cmd': 'frappe.website.doctype.web_form.web_form.accept'}
+2022-01-22 04:44:14,039 ERROR frappe New Exception collected with id: 2022-01-22 04:44:14.035205-61.3.212.251-c83
+Site: sanctity.erpeaz.com
+Form Dict: {'data': '{"job_title":"engineer","applicant_name":"Manav","email_id":"manav@gmail.com","phone_number":7845125623,"state":"Karnataka\\t","cover_letter":"Please find my resume for more details","resume_attachment":"/files/images (3).jpeg","lower_range":200000,"condition":"No","country":"India","currency":"INR","doctype":"Job Applicant","web_form_name":"apply-jobs"}', 'web_form': 'apply-jobs', 'for_payment': 'false', 'cmd': 'frappe.website.doctype.web_form.web_form.accept'}
+2022-01-22 04:44:20,533 ERROR frappe New Exception collected with id: 2022-01-22 04:44:20.529190-61.3.212.251-5ed
+Site: sanctity.erpeaz.com
+Form Dict: {'data': '{"job_title":"engineer","applicant_name":"Manav","email_id":"manav@gmail.com","phone_number":7845125623,"state":"Karnataka\\t","cover_letter":"Please find my resume for more details","resume_attachment":"/files/images (3).jpeg","lower_range":200000,"condition":"No","country":"India","currency":"INR","doctype":"Job Applicant","web_form_name":"apply-jobs"}', 'web_form': 'apply-jobs', 'for_payment': 'false', 'cmd': 'frappe.website.doctype.web_form.web_form.accept'}
+2022-01-22 04:44:22,265 ERROR frappe New Exception collected with id: 2022-01-22 04:44:22.261649-61.3.212.251-c60
+Site: sanctity.erpeaz.com
+Form Dict: {'data': '{"job_title":"engineer","applicant_name":"Manav","email_id":"manav@gmail.com","phone_number":7845125623,"state":"Karnataka\\t","cover_letter":"Please find my resume for more details","resume_attachment":"/files/images (3).jpeg","lower_range":200000,"condition":"No","country":"India","currency":"INR","doctype":"Job Applicant","web_form_name":"apply-jobs"}', 'web_form': 'apply-jobs', 'for_payment': 'false', 'cmd': 'frappe.website.doctype.web_form.web_form.accept'}
+2022-01-22 05:21:00,657 ERROR frappe New Exception collected with id: 2022-01-22 05:21:00.653484-61.3.212.251-99e
+Site: sanctity.erpeaz.com
+Form Dict: {'data': '{"job_title":"engineer","applicant_name":"Safeer","email_id":"safeer.cp2022@webeaz.com","phone_number":12345667874,"country":"India","currency":"INR","lower_range":0,"doctype":"Job Applicant","web_form_name":"apply-jobs"}', 'web_form': 'apply-jobs', 'for_payment': 'false', 'cmd': 'frappe.website.doctype.web_form.web_form.accept'}
+2022-01-22 05:21:17,793 ERROR frappe New Exception collected with id: 2022-01-22 05:21:17.789301-61.3.212.251-a37
+Site: sanctity.erpeaz.com
+Form Dict: {'data': '{"job_title":"engineer","applicant_name":"Safeer","email_id":"safeer.cp2022@webeaz.com","phone_number":12345667874,"country":"India","currency":"INR","lower_range":0,"doctype":"Job Applicant","web_form_name":"apply-jobs"}', 'web_form': 'apply-jobs', 'for_payment': 'false', 'cmd': 'frappe.website.doctype.web_form.web_form.accept'}
+2022-01-22 05:21:40,649 ERROR frappe New Exception collected with id: 2022-01-22 05:21:40.635940-61.3.212.251-680
+Site: sanctity.erpeaz.com
+Form Dict: {'data': '{"job_title":"engineer","applicant_name":"Safeer","email_id":"safeer.cp2022@webeaz.com","phone_number":12345667874,"country":"India","currency":"INR","lower_range":0,"doctype":"Job Applicant","web_form_name":"apply-jobs"}', 'web_form': 'apply-jobs', 'for_payment': 'false', 'cmd': 'frappe.website.doctype.web_form.web_form.accept'}
+2022-01-22 05:21:41,933 ERROR frappe New Exception collected with id: 2022-01-22 05:21:41.929519-61.3.212.251-044
+Site: sanctity.erpeaz.com
+Form Dict: {'data': '{"job_title":"engineer","applicant_name":"Safeer","email_id":"safeer.cp2022@webeaz.com","phone_number":12345667874,"country":"India","currency":"INR","lower_range":0,"doctype":"Job Applicant","web_form_name":"apply-jobs"}', 'web_form': 'apply-jobs', 'for_payment': 'false', 'cmd': 'frappe.website.doctype.web_form.web_form.accept'}
+2022-01-22 05:21:42,285 ERROR frappe New Exception collected with id: 2022-01-22 05:21:42.281443-61.3.212.251-34c
+Site: sanctity.erpeaz.com
+Form Dict: {'data': '{"job_title":"engineer","applicant_name":"Safeer","email_id":"safeer.cp2022@webeaz.com","phone_number":12345667874,"country":"India","currency":"INR","lower_range":0,"doctype":"Job Applicant","web_form_name":"apply-jobs"}', 'web_form': 'apply-jobs', 'for_payment': 'false', 'cmd': 'frappe.website.doctype.web_form.web_form.accept'}
+2022-01-22 05:22:03,150 ERROR frappe New Exception collected with id: 2022-01-22 05:22:03.146575-61.3.212.251-a00
+Site: sanctity.erpeaz.com
+Form Dict: {'data': '{"job_title":"engineer","applicant_name":"Safeer","email_id":"safeer.cp2022@webeaz.com","phone_number":12345667874,"country":"India","currency":"INR","lower_range":0,"doctype":"Job Applicant","web_form_name":"apply-jobs"}', 'web_form': 'apply-jobs', 'for_payment': 'false', 'cmd': 'frappe.website.doctype.web_form.web_form.accept'}
+2022-01-22 05:32:46,506 ERROR frappe New Exception collected with id: 2022-01-22 05:32:46.502332-61.3.212.251-cbc
+Site: sanctity.erpeaz.com
+Form Dict: {'data': '{"job_title":"engineer","applicant_name":"werty","email_id":"aaa@gmail.com","phone_number":12,"state":"Sikkim\\t","cover_letter":"23erfgbwertyuiokjmngx","country":"India","currency":"INR","lower_range":0,"doctype":"Job Applicant","web_form_name":"apply-jobs"}', 'web_form': 'apply-jobs', 'for_payment': 'false', 'cmd': 'frappe.website.doctype.web_form.web_form.accept'}
+2022-01-22 05:57:03,105 ERROR frappe New Exception collected with id: 2022-01-22 05:57:03.099744-61.3.212.251-9f7
+Site: sanctity.erpeaz.com
+Form Dict: {'data': '{"job_title":"engineer","applicant_name":"Manav","email_id":"manavmanu@gmail.com","phone_number":7894563214,"state":"Karnataka\\t","resume_attachment":"/files/images.jpeg","lower_range":200000,"country":"India","currency":"INR","doctype":"Job Applicant","web_form_name":"aaaaaaaaaa"}', 'web_form': 'aaaaaaaaaa', 'for_payment': 'false', 'cmd': 'frappe.website.doctype.web_form.web_form.accept'}
+2022-01-22 05:57:06,959 ERROR frappe New Exception collected with id: 2022-01-22 05:57:06.955070-61.3.212.251-f77
+Site: sanctity.erpeaz.com
+Form Dict: {'data': '{"job_title":"engineer","applicant_name":"Manav","email_id":"manavmanu@gmail.com","phone_number":7894563214,"state":"Karnataka\\t","resume_attachment":"/files/images.jpeg","lower_range":200000,"country":"India","currency":"INR","doctype":"Job Applicant","web_form_name":"aaaaaaaaaa"}', 'web_form': 'aaaaaaaaaa', 'for_payment': 'false', 'cmd': 'frappe.website.doctype.web_form.web_form.accept'}
+2022-01-22 05:57:33,102 ERROR frappe New Exception collected with id: 2022-01-22 05:57:33.098418-61.3.212.251-0e6
+Site: sanctity.erpeaz.com
+Form Dict: {'data': '{"job_title":"engineer","applicant_name":"Manav","email_id":"manavmanu@gmail.com","phone_number":7894563214,"state":"Karnataka\\t","resume_attachment":"/files/images.jpeg","lower_range":200000,"country":"India","currency":"INR","doctype":"Job Applicant","web_form_name":"aaaaaaaaaa"}', 'web_form': 'aaaaaaaaaa', 'for_payment': 'false', 'cmd': 'frappe.website.doctype.web_form.web_form.accept'}
+2022-01-22 05:58:45,665 ERROR frappe New Exception collected with id: 2022-01-22 05:58:45.661636-61.3.212.251-6ec
+Site: sanctity.erpeaz.com
+Form Dict: {'data': '{"job_title":"engineer","applicant_name":"Manav","email_id":"manavmanu@gmail.com","phone_number":7894563214,"state":"Karnataka\\t","resume_attachment":"/files/images.jpeg","lower_range":200000,"country":"India","currency":"INR","doctype":"Job Applicant","web_form_name":"aaaaaaaaaa"}', 'web_form': 'aaaaaaaaaa', 'for_payment': 'false', 'cmd': 'frappe.website.doctype.web_form.web_form.accept'}
+2022-01-22 05:59:13,554 ERROR frappe New Exception collected with id: 2022-01-22 05:59:13.550354-61.3.212.251-71e
+Site: sanctity.erpeaz.com
+Form Dict: {'data': '{"job_title":"engineer","applicant_name":"Manav","email_id":"manavmanu@gmail.com","phone_number":7894563214,"state":"Karnataka\\t","resume_attachment":"/files/images.jpeg","lower_range":200000,"country":"India","currency":"INR","doctype":"Job Applicant","web_form_name":"aaaaaaaaaa"}', 'web_form': 'aaaaaaaaaa', 'for_payment': 'false', 'cmd': 'frappe.website.doctype.web_form.web_form.accept'}
+2022-01-22 06:00:48,770 ERROR frappe New Exception collected with id: 2022-01-22 06:00:48.766133-61.3.212.251-0b1
+Site: sanctity.erpeaz.com
+Form Dict: {'data': '{"job_title":"engineer","applicant_name":"Manav","email_id":"manavmanu@gmail.com","phone_number":7894563214,"state":"Karnataka\\t","resume_attachment":"/files/images.jpeg","lower_range":200000,"country":"India","currency":"INR","doctype":"Job Applicant","web_form_name":"aaaaaaaaaa"}', 'web_form': 'aaaaaaaaaa', 'for_payment': 'false', 'cmd': 'frappe.website.doctype.web_form.web_form.accept'}
+2022-01-22 06:35:27,452 ERROR frappe Could not take error snapshot: characters_written
+Site: sanctity.erpeaz.com
+Form Dict: {'doctype': 'Project', 'name': '.env'}
+Traceback (most recent call last):
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/render.py", line 49, in render
+    data = render_page_by_language(path)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/render.py", line 178, in render_page_by_language
+    return render_page(path)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/render.py", line 194, in render_page
+    return build(path)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/render.py", line 201, in build
+    return build_page(path)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/render.py", line 216, in build_page
+    context = get_context(path)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/context.py", line 15, in get_context
+    context = get_page_context(path)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/router.py", line 40, in get_page_context
+    page_context = make_page_context(path)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/router.py", line 50, in make_page_context
+    raise frappe.PageDoesNotExistError
+frappe.exceptions.PageDoesNotExistError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/context.py", line 56, in update_controller_context
+    ret = module.get_context(context)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/www/printview.py", line 32, in get_context
+    doc = frappe.get_doc(frappe.form_dict.doctype, frappe.form_dict.name)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/__init__.py", line 886, in get_doc
+    doc = frappe.model.document.get_doc(*args, **kwargs)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/model/document.py", line 75, in get_doc
+    return controller(*args, **kwargs)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/model/document.py", line 113, in __init__
+    self.load_from_db()
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/model/document.py", line 156, in load_from_db
+    frappe.throw(_("{0} {1} not found").format(_(self.doctype), self.name), frappe.DoesNotExistError)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/__init__.py", line 439, in throw
+    msgprint(msg, raise_exception=exc, title=title, indicator='red', is_minimizable=is_minimizable, wide=wide, as_list=as_list)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/__init__.py", line 418, in msgprint
+    _raise_exception()
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/__init__.py", line 372, in _raise_exception
+    raise raise_exception(msg)
+frappe.exceptions.DoesNotExistError: Project .env not found
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/app.py", line 77, in application
+    response = frappe.website.render.render()
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/render.py", line 67, in render
+    data = render_page(path)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/render.py", line 194, in render_page
+    return build(path)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/render.py", line 201, in build
+    return build_page(path)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/render.py", line 216, in build_page
+    context = get_context(path)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/context.py", line 28, in get_context
+    context = build_context(context)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/context.py", line 108, in build_context
+    update_controller_context(context, context.controller)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/context.py", line 65, in update_controller_context
+    frappe.errprint(frappe.utils.get_traceback())
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/__init__.py", line 329, in errprint
+    print(msg)
+BrokenPipeError: [Errno 32] Broken pipe
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/utils/error.py", line 36, in make_error_snapshot
+    snapshot = get_snapshot(exception)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/utils/error.py", line 127, in get_snapshot
+    value = pydoc.text.repr(getattr(evalue, name))
+AttributeError: characters_written
+2022-01-22 10:53:12,422 ERROR frappe Could not take error snapshot: characters_written
+Site: sanctity.erpeaz.com
+Form Dict: {'lang': 'en', 'doctype': 'Program', 'name': 'index.php'}
+Traceback (most recent call last):
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/render.py", line 49, in render
+    data = render_page_by_language(path)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/render.py", line 178, in render_page_by_language
+    return render_page(path)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/render.py", line 194, in render_page
+    return build(path)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/render.py", line 201, in build
+    return build_page(path)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/render.py", line 216, in build_page
+    context = get_context(path)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/context.py", line 15, in get_context
+    context = get_page_context(path)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/router.py", line 40, in get_page_context
+    page_context = make_page_context(path)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/router.py", line 50, in make_page_context
+    raise frappe.PageDoesNotExistError
+frappe.exceptions.PageDoesNotExistError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/context.py", line 56, in update_controller_context
+    ret = module.get_context(context)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/www/printview.py", line 32, in get_context
+    doc = frappe.get_doc(frappe.form_dict.doctype, frappe.form_dict.name)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/__init__.py", line 886, in get_doc
+    doc = frappe.model.document.get_doc(*args, **kwargs)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/model/document.py", line 75, in get_doc
+    return controller(*args, **kwargs)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/model/document.py", line 113, in __init__
+    self.load_from_db()
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/model/document.py", line 156, in load_from_db
+    frappe.throw(_("{0} {1} not found").format(_(self.doctype), self.name), frappe.DoesNotExistError)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/__init__.py", line 439, in throw
+    msgprint(msg, raise_exception=exc, title=title, indicator='red', is_minimizable=is_minimizable, wide=wide, as_list=as_list)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/__init__.py", line 418, in msgprint
+    _raise_exception()
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/__init__.py", line 372, in _raise_exception
+    raise raise_exception(msg)
+frappe.exceptions.DoesNotExistError: Program index.php not found
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/app.py", line 77, in application
+    response = frappe.website.render.render()
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/render.py", line 67, in render
+    data = render_page(path)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/render.py", line 194, in render_page
+    return build(path)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/render.py", line 201, in build
+    return build_page(path)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/render.py", line 216, in build_page
+    context = get_context(path)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/context.py", line 28, in get_context
+    context = build_context(context)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/context.py", line 108, in build_context
+    update_controller_context(context, context.controller)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/context.py", line 65, in update_controller_context
+    frappe.errprint(frappe.utils.get_traceback())
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/__init__.py", line 329, in errprint
+    print(msg)
+BrokenPipeError: [Errno 32] Broken pipe
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/utils/error.py", line 36, in make_error_snapshot
+    snapshot = get_snapshot(exception)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/utils/error.py", line 127, in get_snapshot
+    value = pydoc.text.repr(getattr(evalue, name))
+AttributeError: characters_written
+2022-01-23 17:11:51,049 ERROR frappe Could not take error snapshot: characters_written
+Site: sanctity.erpeaz.com
+Form Dict: {'doctype': 'Project', 'name': '.env'}
+Traceback (most recent call last):
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/render.py", line 49, in render
+    data = render_page_by_language(path)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/render.py", line 178, in render_page_by_language
+    return render_page(path)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/render.py", line 194, in render_page
+    return build(path)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/render.py", line 201, in build
+    return build_page(path)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/render.py", line 216, in build_page
+    context = get_context(path)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/context.py", line 15, in get_context
+    context = get_page_context(path)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/router.py", line 40, in get_page_context
+    page_context = make_page_context(path)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/router.py", line 50, in make_page_context
+    raise frappe.PageDoesNotExistError
+frappe.exceptions.PageDoesNotExistError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/context.py", line 56, in update_controller_context
+    ret = module.get_context(context)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/www/printview.py", line 32, in get_context
+    doc = frappe.get_doc(frappe.form_dict.doctype, frappe.form_dict.name)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/__init__.py", line 886, in get_doc
+    doc = frappe.model.document.get_doc(*args, **kwargs)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/model/document.py", line 75, in get_doc
+    return controller(*args, **kwargs)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/model/document.py", line 113, in __init__
+    self.load_from_db()
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/model/document.py", line 156, in load_from_db
+    frappe.throw(_("{0} {1} not found").format(_(self.doctype), self.name), frappe.DoesNotExistError)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/__init__.py", line 439, in throw
+    msgprint(msg, raise_exception=exc, title=title, indicator='red', is_minimizable=is_minimizable, wide=wide, as_list=as_list)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/__init__.py", line 418, in msgprint
+    _raise_exception()
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/__init__.py", line 372, in _raise_exception
+    raise raise_exception(msg)
+frappe.exceptions.DoesNotExistError: Project .env not found
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/app.py", line 77, in application
+    response = frappe.website.render.render()
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/render.py", line 67, in render
+    data = render_page(path)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/render.py", line 194, in render_page
+    return build(path)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/render.py", line 201, in build
+    return build_page(path)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/render.py", line 216, in build_page
+    context = get_context(path)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/context.py", line 28, in get_context
+    context = build_context(context)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/context.py", line 108, in build_context
+    update_controller_context(context, context.controller)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/context.py", line 65, in update_controller_context
+    frappe.errprint(frappe.utils.get_traceback())
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/__init__.py", line 329, in errprint
+    print(msg)
+BrokenPipeError: [Errno 32] Broken pipe
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/utils/error.py", line 36, in make_error_snapshot
+    snapshot = get_snapshot(exception)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/utils/error.py", line 127, in get_snapshot
+    value = pydoc.text.repr(getattr(evalue, name))
+AttributeError: characters_written
+2022-01-23 19:47:47,693 ERROR frappe Could not take error snapshot: characters_written
+Site: sanctity.erpeaz.com
+Form Dict: {'doctype': 'test', 'name': 'wp-includes'}
+Traceback (most recent call last):
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/render.py", line 49, in render
+    data = render_page_by_language(path)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/render.py", line 178, in render_page_by_language
+    return render_page(path)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/render.py", line 194, in render_page
+    return build(path)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/render.py", line 201, in build
+    return build_page(path)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/render.py", line 216, in build_page
+    context = get_context(path)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/context.py", line 15, in get_context
+    context = get_page_context(path)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/router.py", line 40, in get_page_context
+    page_context = make_page_context(path)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/router.py", line 50, in make_page_context
+    raise frappe.PageDoesNotExistError
+frappe.exceptions.PageDoesNotExistError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/context.py", line 56, in update_controller_context
+    ret = module.get_context(context)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/www/printview.py", line 32, in get_context
+    doc = frappe.get_doc(frappe.form_dict.doctype, frappe.form_dict.name)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/__init__.py", line 886, in get_doc
+    doc = frappe.model.document.get_doc(*args, **kwargs)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/model/document.py", line 75, in get_doc
+    return controller(*args, **kwargs)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/model/document.py", line 113, in __init__
+    self.load_from_db()
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/core/doctype/test/test.py", line 19, in load_from_db
+    with open("data_file.json", "r") as read_file:
+FileNotFoundError: [Errno 2] No such file or directory: 'data_file.json'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/app.py", line 77, in application
+    response = frappe.website.render.render()
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/render.py", line 67, in render
+    data = render_page(path)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/render.py", line 194, in render_page
+    return build(path)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/render.py", line 201, in build
+    return build_page(path)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/render.py", line 216, in build_page
+    context = get_context(path)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/context.py", line 28, in get_context
+    context = build_context(context)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/context.py", line 108, in build_context
+    update_controller_context(context, context.controller)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/context.py", line 65, in update_controller_context
+    frappe.errprint(frappe.utils.get_traceback())
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/__init__.py", line 329, in errprint
+    print(msg)
+BrokenPipeError: [Errno 32] Broken pipe
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/utils/error.py", line 36, in make_error_snapshot
+    snapshot = get_snapshot(exception)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/utils/error.py", line 127, in get_snapshot
+    value = pydoc.text.repr(getattr(evalue, name))
+AttributeError: characters_written
+2022-01-25 07:43:25,229 ERROR frappe Could not take error snapshot: characters_written
+Site: sanctity.erpeaz.com
+Form Dict: {'doctype': 'Project', 'name': '.env'}
+Traceback (most recent call last):
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/render.py", line 49, in render
+    data = render_page_by_language(path)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/render.py", line 178, in render_page_by_language
+    return render_page(path)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/render.py", line 194, in render_page
+    return build(path)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/render.py", line 201, in build
+    return build_page(path)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/render.py", line 216, in build_page
+    context = get_context(path)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/context.py", line 15, in get_context
+    context = get_page_context(path)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/router.py", line 40, in get_page_context
+    page_context = make_page_context(path)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/router.py", line 50, in make_page_context
+    raise frappe.PageDoesNotExistError
+frappe.exceptions.PageDoesNotExistError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/context.py", line 56, in update_controller_context
+    ret = module.get_context(context)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/www/printview.py", line 32, in get_context
+    doc = frappe.get_doc(frappe.form_dict.doctype, frappe.form_dict.name)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/__init__.py", line 886, in get_doc
+    doc = frappe.model.document.get_doc(*args, **kwargs)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/model/document.py", line 75, in get_doc
+    return controller(*args, **kwargs)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/model/document.py", line 113, in __init__
+    self.load_from_db()
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/model/document.py", line 156, in load_from_db
+    frappe.throw(_("{0} {1} not found").format(_(self.doctype), self.name), frappe.DoesNotExistError)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/__init__.py", line 439, in throw
+    msgprint(msg, raise_exception=exc, title=title, indicator='red', is_minimizable=is_minimizable, wide=wide, as_list=as_list)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/__init__.py", line 418, in msgprint
+    _raise_exception()
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/__init__.py", line 372, in _raise_exception
+    raise raise_exception(msg)
+frappe.exceptions.DoesNotExistError: Project .env not found
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/app.py", line 77, in application
+    response = frappe.website.render.render()
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/render.py", line 67, in render
+    data = render_page(path)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/render.py", line 194, in render_page
+    return build(path)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/render.py", line 201, in build
+    return build_page(path)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/render.py", line 216, in build_page
+    context = get_context(path)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/context.py", line 28, in get_context
+    context = build_context(context)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/context.py", line 108, in build_context
+    update_controller_context(context, context.controller)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/website/context.py", line 65, in update_controller_context
+    frappe.errprint(frappe.utils.get_traceback())
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/__init__.py", line 329, in errprint
+    print(msg)
+BrokenPipeError: [Errno 32] Broken pipe
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/utils/error.py", line 36, in make_error_snapshot
+    snapshot = get_snapshot(exception)
+  File "/home/erpnext/frappe-bench/apps/frappe/frappe/utils/error.py", line 127, in get_snapshot
+    value = pydoc.text.repr(getattr(evalue, name))
+AttributeError: characters_written

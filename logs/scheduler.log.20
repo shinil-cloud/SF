@@ -1,0 +1,11 @@
+2022-01-24 13:42:31,709 INFO scheduler Scheduled Job Complete: frappe.monitor.flush for sanctity.erpeaz.com
+2022-01-24 13:42:31,812 INFO scheduler Scheduled Job Start: frappe.utils.global_search.sync_global_search for sanctity.erpeaz.com
+2022-01-24 13:42:32,016 INFO scheduler Scheduled Job Complete: frappe.utils.global_search.sync_global_search for sanctity.erpeaz.com
+2022-01-24 13:42:32,121 INFO scheduler Scheduled Job Start: frappe.integrations.doctype.razorpay_settings.razorpay_settings.capture_payment for sanctity.erpeaz.com
+2022-01-24 13:42:32,477 INFO scheduler Scheduled Job Complete: frappe.integrations.doctype.razorpay_settings.razorpay_settings.capture_payment for sanctity.erpeaz.com
+2022-01-24 13:42:32,577 INFO scheduler Scheduled Job Start: frappe.email.doctype.email_account.email_account.notify_unreplied for sanctity.erpeaz.com
+2022-01-24 13:42:32,852 INFO scheduler Scheduled Job Complete: frappe.email.doctype.email_account.email_account.notify_unreplied for sanctity.erpeaz.com
+2022-01-24 13:42:32,948 INFO scheduler Scheduled Job Start: frappe.email.doctype.email_account.email_account.pull for sanctity.erpeaz.com
+2022-01-24 13:42:33,213 INFO scheduler Scheduled Job Complete: frappe.email.doctype.email_account.email_account.pull for sanctity.erpeaz.com
+2022-01-24 13:42:33,417 INFO scheduler Scheduled Job Start: frappe.email.queue.flush for sanctity.erpeaz.com
+2022-01-24 13:42:33,862 INFO scheduler Scheduled Job Complete: frappe.email.queue.flush for sanctity.erpeaz.com

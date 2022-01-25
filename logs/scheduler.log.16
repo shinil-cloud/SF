@@ -1,0 +1,4 @@
+2022-01-24 17:18:39,922 INFO scheduler Scheduled Job Start: frappe.email.doctype.email_account.email_account.pull for sanctity.erpeaz.com
+2022-01-24 17:18:40,195 INFO scheduler Scheduled Job Complete: frappe.email.doctype.email_account.email_account.pull for sanctity.erpeaz.com
+2022-01-24 17:18:40,409 INFO scheduler Scheduled Job Start: frappe.email.queue.flush for sanctity.erpeaz.com
+2022-01-24 17:18:40,842 INFO scheduler Scheduled Job Complete: frappe.email.queue.flush for sanctity.erpeaz.com
